@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .f1{background-color: yellow;}
+        #title{color:blue;}
+        .f2{background-color: darkseagreen;}
+        .f3{background-color: lightcoral;}
+        .f4{background-color: lightskyblue;}
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#title" target="_top">title</a></li>
+            <li><a href="#text" target="_top">text</a></li>
+            <li><a href="#summary" target="_top">summary</a></li>
+            <li><a href="#deco" target="_top">deco</a></li>
+        </ul>
+    </header>
+    <fieldset id="title" class="f1">
+        <legend>제목 태그들</legend>
+        <h1>heading 1 : IE7 - 24pt(글자, ios모바일), IE8~ - 대략 32px(디지털 전반)</h1>
+        <h2>heading 2 : IE7 - 18pt(글자, ios모바일), IE8~ - 대략 24px(디지털 전반)</h2>
+        <h3>heading 3 : IE7 - 13~14pt(글자, ios모바일), IE8~ - 대략 19px(디지털 전반)</h3>
+        <h4>heading 4 : IE7 - 12~13pt(글자, ios모바일), IE8~ - 대략 16px(디지털 전반)</h4>
+        <h5>heading 5 : IE7 - 10pt(글자, ios모바일), IE8~ - 대략 13px(디지털 전반)</h5>
+        <h6>heading 6 : IE7 - 7~8pt(글자, ios모바일), IE8~ - 대략 11px(디지털 전반)</h6>
+    </fieldset>
+    <fieldset id="text" class="f2">
+        <legend>본문 태그들</legend>
+        <p>     <!--paragraph 단락-->
+           Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
+           Dolore perspiciatis unde eveniet ab nemo vitae qui nulla dignissimos, 
+           in, rerum hic vero explicabo delectus? Sint, impedit. <br> 
+           Nihil dolorem dolores fugit.</p>
+        <hr>    <!--horizontal 수평선-->
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Quisquam cupiditate velit aspernatur. 
+            Adipisci mollitia debitis officia vitae est aperiam totam inventore odit, 
+            quasi nesciunt, ipsam officiis fugiat qui nemo quisquam.</p>
+    </fieldset>
+    <fieldset id="summary" class="f3">
+        <legend>정리</legend>
+       <h2><strong><mark>스노우 바닐라 티 라떼 &#8249;snow vanilla tea latte&#8250;</mark></strong></h2>
+       <p>얼 그레이 바닐라 티 라떼는 <i>earl gray, english Breakfast</i> 등 2가지 티가 조화롭게 어우러지는 
+        다채로운 블랙 티의 풍미가 특징으로 <br>연유의 달콤함에 부드러운 얼 그레이 폼과 바닐라 풍미를 느낄 수 있는 음료다.</p>
+       <img src="https://blog.kakaocdn.net/dn/D1Gam/btrSLIli6b2/uxsPqwrsDJDbYEk5w1Dy80/img.png" alt="스노우 바닐라 티 라떼">
+       <a href="https://www.starbucks.co.kr/index.do"><i>Click here!✔</i></a>
+    </fieldset>
+    <fieldset id="deco" class="f4">
+        <legend>꾸밈 태그들</legend>
+        <b>어떤 날엔 우리 둘이서 길을 따라 천천히 발맞춰 걸으며</b><br> <!--굵게-->
+        <strong>마주 보던 두 눈에</strong>
+        <hr>
+        <i>서로를 흘러넘치게 </i><br> <!--italic 기울임꼴-->
+        <em>가득 담아 앞서 걷던 그대가 </em>  <!--emphasis 기울여 강조-->
+        <hr>
+        <small>뒤돌아 따스히 내 이름 불러줄 때</small>
+        <p>이미 커져 버린 <sub>마음 한구석</sub></p>  <!--subscript 아랫첨자-->
+        <p><sup>웃음이 <sup>새어 나와</sup></p>  <!--superscript 윗첨자-->
+        <hr>
+        <ins>아주 많이 그대를 담을래요</ins>  <!--insert 끼워넣다,(강조)밑줄-->
+        <del>아주 많이 그대를 기다려요</del>  <!--delete 취소선-->
+        <s>우리 함께 했던 순간 모두 모아</s>  <!--strikethrough 글자위에 선을 통과 = 취소선 strike선, stroke선, border선-->
+        <hr>
+        <mark>손잡고 달려가자</mark>  <!--형광펜 중요표시-->
+        <p>나는 커피가 &nbsp; 땡긴다... 몹시도..</p>  <!--&nbsp; 공백 담당 엔티티-->
+        <blockquote>"태그의 세상은 다양하구나..."</blockquote>  <!--인용구-->
+        <abbr title="밑줄">와우 밑줄이다</abbr><br> <!--abbrivation 약어 점선 밑줄 형태로 표시-->
+        <acronomy title="밑줄">이것도 밑줄이네</acronomy><br>  <!--학명 점선 밑줄 형태로 표시,5버전에서는 지양-->
+        <cite >도움말</cite><br>  <!--citation 도움말 기울임꼴로 표시됨, 5버전에서는 지양-->
+        <dfn>논문같은 문서에서 강조표시 할 때</dfn>   <!--definitions : 강조, 문서 안에서 강조-->
+        <address><a href="mailto:honggildong@gmail.com">mailto:honggildong@gmail.com</a></address>  <!--주소, 기울임꼴 또는 기본 출력-->
+    </fieldset>
+</body>
+</html>
