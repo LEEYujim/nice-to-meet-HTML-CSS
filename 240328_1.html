@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cb1{
+            color: darkred
+        }
+        .cafelist{
+            list-style-type: none;
+        }
+        .cafelist3{
+            list-style-type: none;
+        }
+        figure{
+            background-color: lightpink;
+            padding: 10px;
+            border: 1px solid black
+        }
+        .subject1{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <figure>
+        <h3><ins>목차 태그들</ins></h3>
+        <ul><!--unordered list : 순서없는 목록-->
+            <li><b>오늘의 원두</b></li>
+            <li class="cb1">-코스타리카</li>
+            <li>-브라질 세하도</li>
+            <li>-콜롬비아</li>
+            <li>-라오스</li>
+        </ul>
+        <hr>
+        <ol><!--ordered list : 순서있는 목록-->
+            <li>정량의 원두를 담는다. (20g)</li>
+            <li>무게를 재어 맞는지 확인하고, 탬핑한다.</li>
+            <li>머신에 연결하여 커피를 추출한다.</li>
+            <li>컵에 따뜻한 물에 데운다.</li>
+            <li>데운 컵에 추출한 에스프레소 샛과 따뜻한 물에 정량 담는다.</li>
+            <li>따뜻한 원두 커피 완성!</li>
+        </ol>
+        <hr>
+        <dl><!--definition list : 정의 목록-->
+            <dt>룽고</dt><!--definition list의 title : 정의 목록의 제목-->
+            <dd>커피 추출 시간을 길게 하여 에스프레소를 진하게 봅는 것</dd><!--definition list의 data : 정의-->
+            <dd>맛이 좀 더 풍미가 강하다</dd>
+        </dl>
+    </figure>
+    <figure>
+        <h3 class="subject1">정리</h3>
+        <ul class="cafelist">
+            <li>
+                커피류
+                <ol>
+                    <li>아메리카노</li>
+                    <li>카페라떼</li>
+                    <li>모카라떼</li>
+                    <li>바닐라라떼</li>
+                    <li>밀크라떼</li>
+                </ol>
+            </li>
+            <li> 
+                <dl>
+                    <dt>논커피류</dt>
+                    <dd>초코우유</dd>
+                    <dd>딸기우유</dd>
+                    <dd>바닐라우유</dd>
+                    <dd>녹차우유</dd>
+                    <dd>메론우유</dd>
+                </dl>
+            </li>
+            <li>
+                디저트류
+                <ol class="cafelist3">
+                    <li>딸기빵</li>
+                    <li>바나나빵</li>
+                    <li>초코빵</li>
+                    <li>메론빵</li>
+                    <li>우유빵</li>
+                </ol>
+            </li>
+        </ul>
+    </figure>
+   <!--div - figure, article, nav, header, aside, footer, main-->
+
+</body>
+</html>
