@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 style="color:blue;">테이블 태그</h3>
+    <article>
+    <table border="1"><!--표 생성-->
+        <tr bgcolor="coral">
+            <th>1순위</th><!--table head, heading 셀 제목-->
+            <th>2순위</th>
+            <th>3순위</th>
+            <th>4순위</th>
+        </tr>
+        <tr><!--table row : 행-->
+            <td><!--table data : 칸-->
+                한국
+
+            </td>
+            <td>
+                일본
+            </td>
+            <td>중국</td>
+            <td>인도</td>
+
+        </tr>
+        <tr>
+            <td>스위스</td>
+            <td>폴란드</td>
+            <td>프랑스</td>
+            <td>인도네시아</td>
+        </tr>
+        <tr>
+            <td>우간다</td>
+            <td>콩고</td>
+            <td>가나</td>
+            <td>캐나다</td>
+        </tr>
+        <caption>테이블태그 써보기</caption><!--덩어리의 도움말 삽입 태그, 테이블에서 제목형태로 나타난다.-->
+
+    </table>
+</article><br>
+<article>
+    <table border="1">
+        <tr bgcolor="coral">
+            <td></td>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+        </tr>
+        <tr>
+            <td>1교시</td>
+            <td>영어</td>
+            <td>국어</td>
+            <td>과학</td>
+            <td>미술</td>
+            <td>기술</td>
+        </tr>
+
+        <tr>
+            <td>2교시</td>
+            <td>도덕</td>
+            <td>체육</td>
+            <td>영어</td>
+            <td>수학</td>
+            <td>사회</td>
+        </tr>
+        <caption><b><mark>❤우리들의 시간표❤</mark></b></caption>
+    </table>
+</article>
+<article>
+    <table border="1">
+        <!--div><span></span></div>-->
+        <tr> <th colspan="2">지역별 홍차</th></tr><!--col : colum 칼럼 다단, 열 + span : 일부단위 선택 = 열 합침 => 셀병합(가로)-->
+        <tr> <th rowspan="3">중국</th><td>정산소종</td></tr><!--row : row 로우 줄, god + span : 일부단위 선택 = 행 합침 => 행병합(세로)-->
+        <tr> <td>기문</td></tr>
+        <tr> <td>운남</td></tr>
+        <tr> <th rowspan="4">인도 및 스리랑카 </th><td>아삼</td></tr>
+        <tr> <td>실론</td></tr>
+        <tr> <td>다질링</td></tr>
+        <tr> <td>닐기리</td></tr>
+    </table>
+</article>
+    
+</body>
+</html>
