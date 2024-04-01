@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .waffletable{
+            width:100px;
+            height:100px;
+        }
+        .waffletable td{
+            width:100px;
+            height:100px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!--표 작성-->
+        <table border="1">
+            <thead>
+            <tr>
+                <th>짱구는 못말려</th>
+                <th>안녕 자두야</th>
+                <th>도라에몽</th>
+                <th>아따맘마</th>
+                <td rowspan="3">즐거운 만화~!</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>짱구</td>
+                <td>자두</td>
+                <td>도라에몽</td>
+                <td>아리</td>
+                
+            </tr>
+        </tbody>
+            <tr>
+                <td>철수</td>
+                <td>민지</td>
+                <td>노진구</td>
+                <td>동동</td>
+            </tr>
+            <tr>
+                <td colspan="5">더 좋은 만화가 있다면 추천해 봅시다</td><!--열 병합-->
+            </tr>
+        </table>
+    </div>
+    <br><hr>
+    <div>
+        <table border="1"><!--웹 접근성 : 장애우 스크린리더--><!--의미론적 태그 : 시맨틱 태그-->
+            <thead><!--머릿글, 각 칸의 제목, 정보-->
+            <tr>
+                <th colspan="10">번호</th>
+            </tr>
+        </thead>
+
+        <tfoot><!--바닥글, 저자, 출처. 인용 정보-->
+            <tr>
+                <td colspan="10">총 10</td>
+            </tr>
+        </tfoot>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+        </tbody> 
+        </table>
+    </div>
+    <div>
+        <!--테이블태그 작성 순서
+        1. table태그> caption태그> colgroup, col태그> tr,td
+        2. tr, td태그 작성할 때, 의미태그를 같이 쓸 것이라면, 
+           thead > tfoot > tbody 순으로 작성이 권장됩니다.-->
+        <table border="1"
+        <colgroup><!--열 그룹 태그-->
+            <col><!--단일 태그, column(열)의 줄임말-->
+            <col style="background-color: blue;" span="3"><!--몇 개의 열을 선택할 것인가>-->
+            <col style="background-color: greenyellow;">
+            <col style="background-color: coral;">
+        </colgroup>
+        <tr class="waffletable">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="waffletable">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    </div><br><hr>
+    <!--span은 spanning(아우르다)의 약자
+        scope : 시맨틱 캐그, 제목을 보다 잘 선택하려고 쓰는 속성
+        th, 즉 제목태그에만 쓰입니다-->
+        <table border="1">
+            <tr>
+                <!--th scope="colgroup" colspan="5">구분</th-->
+                <th scope="colgroup" colspan="5">구분</th>
+                <th scope="col">중간고사</th>
+                <th scope="col">기말고사</th>
+            </tr>
+            <tr>
+                <th>전공</th>
+                <td>A0</td>
+                <td>B+</td>
+            </tr>
+            <tr>
+                <th>교양</th>
+                <td>C-</td>
+                <td>D</td>
+            </tr>
+        </table>
+
+
+    
+</body>
+</html>
