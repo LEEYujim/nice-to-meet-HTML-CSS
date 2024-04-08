@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*h1-태그이름:선택자
+        color-컬러:속성
+        aqua-컬러값:속성값*/
+
+        h1{
+            color:aqua;
+        }
+        p{
+            color:blueviolet;
+        }
+        #firsttext{
+            background-color: black;
+            }
+            .doco1{
+                color:cadetblue;
+            }
+        ul li{
+            color:rgb(255, 0, 140);
+        }
+        ul>li:nth-child(even){
+            color:blue;
+        }
+        p{
+          float: left;
+            
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>
+            <h1>CSS3 만나보기</h1>
+        </legend>
+        <p id="firsttext" class="doco1">sdsadadcfsdsadadcfsdsadadcfsdsadadcfsdsadadcfsdsadadcfsdsadadcf</p>
+        <p>sdsadadcfsdsadadcfsdsadadcfsdsadadcfsdsadadcfsdsadadcfsdsadadcf</p>
+        <hr>
+        <ul>
+            <li>오늘은 4월 8일 입니다.</li>
+               <ol>
+                <li>오늘은CSS 선택자를 알아봅니다.</li>
+               </ol>
+            <li>오늘은 월요일입니다.</li>
+            <li>내일 모레는 휴일입니다.</li>
+        </ul>
+    </fieldset>
+
+</body>
+</html>
