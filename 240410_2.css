@@ -1,0 +1,97 @@
+/*문서 전반에 적용하는 css*/
+/*전체선택자 : html 문서 전반*/
+*{}/*html보다 조금 더 큰 영역*/
+
+html{
+    font-size: 100%;/*margin 0 auto같은 개념, 제 폰트 크기대로 도출되는 것을 기본값*/
+}
+body{
+    color: darkbrown;
+    font-family: sans-serif;
+}
+/*세개의 섹션에 공통 적용되는 css*/
+.title{
+    font-size:8em;
+    font-family: "DM Serif Display", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+      
+    
+      
+    /*h1,h2제목 태그 하단에 나머지 p태그나, table같은 글감과의 여백을 주고자 할 때,
+    margin-bottom: 'n'em; 등을 추가할 수 있습니다.*/
+p{
+    line-height:1.7em;
+}
+/*세 개의 섹션을 묶는 큰 태그에 작용하는 css를 작성*/
+main{
+    overflow: auto;/*마우스로 화면 내용을 스크롤 할 때 그대로 스크롤링 될 수 있게 허용*/
+    scroll-snap-type: y mandatory;
+    /*스크롤 할 때 부드러운 동작으로 화면 넘기기 위한 효과, mandatory : 의무적인, 법규에 정해진-스크롤 및 스냅영역과 일치할 때만 기능 구현됨
+    proxinity : ~에 가까운, 근접한-스크롤 될 스냅영역에 근접하면 기능 구현됨*/
+    height: 100vh;/*디스플레이의 화면 높이 viewport-height가 100%로 채워질 수 있도록 하는 것*/
+}
+section{
+    height: 100vh;
+    scroll-snap-align: start; /*부모 요소에 어떻게 스크롤 할건지 세팅*/
+    background-repeat: no-repeat;/*백그라운드 이미지가 반복이 안되었으면 해서*/
+    background-size: cover;/*각 섹션의 높이 값만 100vh를 다 쓰도록 늘림*/
+    background-position: center center;
+}
+
+.box1{
+    background-image: url("./images/빵집이미지들/bread1.jpg");
+    text-align: center;
+    padding-top: 5rem;
+}
+.box1 p{
+    padding-top: 20px;
+}
+.box2{
+    background-image: url("./images/빵집이미지들/bread2.jpg");
+    padding-left: 200px;
+    padding-top: 20px;
+    display: flex;
+}
+.box2 table{
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.menu-list td{
+    padding-bottom: 5px;
+    padding-right: 2.5rem;
+}
+.box3{
+    background-image: url("./images/빵집이미지들/cafe.jpg");
+    text-align: center;
+    padding-top: 50px;
+}
+.box3 p{
+    margin-bottom: 20px;
+}
+.btn1{
+    background-color: darkred;
+    color:white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    border:1px solid darkred;
+    border-radius: 4px;
+    padding:5px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.btn1:hover{
+    background-color: white;
+    color:darkred;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    border:1px solid white;
+    border-radius: 4px;
+    padding:5px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.title{
+    margin-bottom: 0;
+}

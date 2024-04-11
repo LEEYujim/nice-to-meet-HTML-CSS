@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;/*padding에 계산 같이 넣어줘..*/
+        }
+        html{
+            font-size: 100%;
+            scroll-snap-type: y mandatory;
+        }
+        section{
+            height: 100vh;/*높이를 한 화면높이 만큼 늘려서 큰 배경을 만듦*/
+            padding: 2em;
+            text-align: center;
+            scroll-snap-align: start;
+            position: relative;/*상대적-이 section을 기준으로 삼는다.*/
+        }
+        h1{
+            text-align: center;
+            position: absolute;/*절대적-이 h1울 section의 영역 안에서 움직이도록 한다.*/
+            top: 50%;
+            left: 50%;
+            right: ;
+            bottom: ;
+            font-size: calc(1rem + 10vw);/*calculator : 계산기*/
+        }
+        /*margin: 바깥여백
+        -top, -left, -right, -bottom
+        padding: 안쪽여백
+        -top, -left, -right, -bottom
+        display (표면, 장식)
+        -block(세로로 떨구겠다)
+        -inline(가로를 유지하고파)
+        -inline-block(가로 세로 유연)
+        flex(flexbox : 큰 무형의 박스단위로 레이아웃을 짜겠다.)
+            -justify-content: -left, -center, -right;(행 정렬 : x-axis(축))
+            -space-between;(균등 배분 정렬)
+            align-items: (열 정렬 : y-asix(축))
+            -top, -center, right;
+            position: relative; (부모가 될 태그한테 부여한다.)
+                      absolute; (부모의 공간 안에서 배치되고자 한다.)
+                       -top, -left, right, bottom(방향을 움직인다.)*/
+    </style>
+</head>
+<body>
+    <section style="background-color: lightcoral;">
+        <h1>안녕하세요</h1>
+    </section>
+    <section style="background-color: lightseagreen;">
+        <h1>こんにちは</h1>
+    </section>
+    <section style="background-color: lightsalmon;">
+        <h1>Bonjour</h1>
+    </section>
+    <section style="background-color: lightgreen;">
+        <h1>Hola</h1>
+    </section>
+    <section style="background-color: lightpink;">
+        <h1>Hello</h1>
+    </section>
+    
+</body>
+</html>
