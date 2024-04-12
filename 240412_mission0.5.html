@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        mark{
+            background-color: rgb(255, 195, 225);
+        }
+        main{
+            margin: 6rem;
+        }
+        .head td:nth-child(2){
+            color: blue;
+        }
+        section{
+            padding-bottom:2rem;
+            line-height:1.5rem;
+        }
+        h1{
+            font-size: 3em;
+            color:darkcyan;
+        }
+        div{
+            background-color:lightyellow;
+        }
+        p{
+            line-height:2rem;
+        }
+        figure{
+            height: 30em;
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <header>
+        <h1>CSS3 기초: 선택자와 단위 미니테스트</h1><br>
+    </header>
+    <section>
+<h3>01 관련 있는 것끼리 서로 연결하시오.</h3>
+<p><b>1. 기본 선택자</b><br>
+① 전체 선택자-----<mark>ⓒ</mark> *<br>
+② 태그 선택자-----<mark>ⓓ</mark> h1<br>
+③ 아이디 선택자-----<mark>ⓑ</mark> #id<br>
+④ 클래스 선택자-----<mark>ⓐ</mark> .header<br>
+<b>2. 자손 선택자와 후손 선택자</b><br>
+① 선택자A > 선택자B-----<mark>ⓐ</mark> 자손 선택자<br>
+② 선택자A 선택자B-----<mark>ⓑ</mark> 후손 선택자</p>
+
+</section>
+<section>
+    <h3>02 다음 질문에 OX를 표시하시오.</h3>
+    <ol>
+      <li>자손은 후손보다 넓은 개념입니다. (<mark>X</mark>)</li><br>
+      <li>div > h1, h2는 “div 태그 아래”의 “h1 태그와 h2 태그”를 선택하는 선택자입니다. (<mark>X</mark>)</li><br>
+      <li>CSS도 HTML처럼 <!-- 주석 --> 형태로 주석을 사용합니다. (<mark>X</mark>)</li><br>
+      <li>2em은 2배를 나타내는 크기 단위입니다. (<mark>O</mark>)</li><br>
+      <li>색상 단위에서 투명도를 지정할 때는 a rgb( ) 등을 사용합니다.(<mark>X</mark>)</li><br>
+      <li>URL을 지정할 때는 url ( ) 형태의 코드를 사용합니다. (<mark>O</mark>)</li><br>
+    </ol>
+</section>
+    <section>
+<h3>03 다음 코드에서 선택자가 어떤 태그를 선택하는지 설명하시오.</h3>
+<div>ex)<i>div > a : div 태그 아래에 있는 a 태그를 선택한다.</i></div><br>
+<ol>
+    <li>header a : <mark>header에 있는 모든 a를 선택한다.</mark></li><br>
+    <li>header > * > h1 : <mark>header에 바로 직계자손의 자손인 h1을 선택한다.(나의 딸의 손녀)</mark></li><br>
+    <li>header > div:first-child > a :<mark>header에 바로 직계자손의 첫번째 div의 직계 자손인 a 호출(나의 아들의 손주)</mark></li><br>
+    <li>header a:first-child > a :<mark> header의 후손 여러 a태그들 중 첫번째 a태그의 직계자손인 a태그</mark></li><br>
+    <li>div > h1, h2 : <mark>div의 직계 자손인 h1과, 일반 웹문서 전체를 통틀어 h2 태그 선택</mark></li><br>
+    <li>.title.card : <mark>class 별명이 title임과 동시에 class별명이 card 이기도 한 태그 선택</mark></li>
+</ol>
+</section>
+<section>
+    <h3>04 다음 HTML 구조에서 음영으로 표시된 태그를 선택할 수 있는 선택자를 3개 이상 만드시오.</h3>
+    <figure>
+        <dl>
+            <dt>&lt;body&gt;</dt>
+            <dt><dd>&lt;table&gt;</dd></dt>
+            <dt><dd>&lt;tr class="head"&gt;</dd></dt>
+            <dt><dd>&lt;td class="head-item">Lorem&lt;/td&gt;</dd></dt>
+            <dt><dd><mark>&lt;td class="head-item">Ipsum&lt;/td&gt;</mark></dd></dt>
+            <dt><dd>&lt;/tr&gt;</dd></dt>
+            <dt><dd>&lt;tr&gt;</dd></dt>
+            <dt><dd>&lt;td&gt;Dolor&lt;/td&gt;</dd></dt>
+            <dt><dd>&lt;td&gt;Amet&lt;/td&gt;</dd></dt>
+            <dt><dd>&lt;/tr&gt;</dd></dt>
+            <dt><dd>&lt;/table&gt;</dd></dt>
+            <dt>&lt;/body&gt;</dt>
+            </dl>
+    </figure><br>
+    답 :.head-item<br>
+    tr:first-child td:nth-child(2)<br>
+    .head .head-item<br>
+    .head td:nth-child(2)<br>
+    tr.head-item<br>
+</section>
+<section>
+    <h3>05 다음 코드에서 선택자가 어떤 태그를 선택하는지 적으시오.</h3>
+    <figure>
+        <xmp>
+            <body>
+                <header>
+                    <hgroup>
+                        <h1><a href="#">Header</a></h1>
+                    </hgroup>
+                    <nav>
+                        <div><a href="#">Item</a></div>
+                        <div><a href="#">Item</a></div>
+                        <div><a href="#">Item</a></div>
+                    </nav>
+                </header>
+            </body>
+                            </xmp>
+        </figure><br>
+    <div>ex) 1번 선택자 구문이 의미하는 바 (nav a) : nav 태그 아래 모든 a태그를 선택한다.</div>
+
+    <ul>
+       <li>1번 선택자 (header a) : <mark>header안에 있는 모든 후손 a태그를 선택한다.</mark></li> <br>
+       <li>2번 선택자 (header > * > h1) :<mark>header에 있는 직계자손 안에 한번 더 타고 내려간 직계자손 h1을 선택한다.</mark></li> <br>
+       <li>3번 선택자 (header > * > *:first-child > a) :<mark>header안에 있는 모든 후손 a태그를 선택한다.</mark></li> <br>
+       <li>4번 선택자 (header a:first-child) : <mark>header에 있는 첫번째 태그를 선택한다.</mark></li> 
+    </ul>
+</section>
+<section>
+    <h3>06 다음 HTML 구조에서 음영으로 표시된 태그를 선택할 수 있는 선택자를 3개 이상 만드시오.</h3>
+    <figure>
+        <dl>
+            <dt>&lt;body&gt;</dt>
+            <dt><dd>&lt;h1&gt;CSS3 Basic&lt;/h1&gt;</dd></dt>
+            <dt><dd>&lt;ul&gt;</dd></dt>
+            <dt><dd><mark>&lt;li id="first" class="active"&gt;CSS3 Selector&lt;/li&gt;</mark></dd></dt>
+            <dt><dd>&lt;li&gt;CSS3 Property&lt;/li&gt;</dd></dt>
+            <dt><dd>&lt;li&gt;CSS3 Skill&lt;/li&gt;</dd></dt>
+            <dt><dd>&lt;/ul&gt;</dd></dt>
+            <dt>&lt;/body&gt;</dt>
+        </dl>
+    </figure><br>
+    답 :#first<br>
+    .active<br>
+    li:first-child<br>
+    ul > li:first-child<br>
+    ul li:first-of-type<br>
+    ul li:first-child
+</section>
+<section>
+    <h3>07 다음 코드의 실행 결과를 예측하시오</h3>
+    <figure>
+    <xmp>
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <title>CSS3 Selector Basic</title>
+                <style>
+                    li > a:first-child { color: red; }
+                </style>
+            </head>
+            <body>
+                <ul>
+                    <li><a href="#">a 태그</a></li>
+                    <li><a href="#">a 태그</a></li>
+                    <li><a href="#">a 태그</a></li>
+                    <li><a href="#">a 태그</a></li>
+                    <li><a href="#">a 태그</a></li>
+                </ul>
+            </body>
+        </html>
+                        </xmp><br>
+                    </figure>
+    답 : <mark>모든 a태그가 레드컬러일 것이다.</mark>
+</section>
+<section>
+    <h3>08 다음 중에서 CSS에서 사용할 수 없는 크기 단위는?</h3>
+    
+    ① cm &nbsp; <mark>② m </mark>&nbsp; ③ em  &nbsp;④ px
+</section>
+<section>
+    <h3>09 다음 스타일이 적용되는 태그 너비를 구하시오.</h3>
+    <figure>
+        <xmp>
+            box {
+            width: 100px; height: 100px;
+            margin: 0 20px;
+            padding: 10px 0px;
+            border: 5px solid black;
+            }
+                        </xmp>
+    </figure>
+    답 :<mark>150px</mark>
+</section>
+</main>
+</body>
+</html>
