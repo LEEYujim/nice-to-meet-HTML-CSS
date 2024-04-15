@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>css flaot1</title>
+    <style>
+        body{
+            margin: 0 auto;
+            padding: 0;
+        }
+        .box{
+            font-size: 18px;
+            line-height: 110%;
+            width: 960px;
+            margin: 0 auto;
+            padding: 0;
+        }
+        .box h2{
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .sec1::after{
+            clear:none;
+        }
+        .sec1_p1{
+            float:left;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 60px;
+            font-family: sans-serif;
+        }
+        .pic2{
+            float:left;
+        }
+        .sec2_p2{
+            float:right;
+            padding-top: 10px;
+            padding-right: 50px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <header>
+        <h2>What we do?</h2>
+    </header>
+    <section>
+    <article class="sec1">
+        <p class="sec1_p1">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
+           Dolor exercitationem debitis nostrum corporis. Debitis,<br> 
+           vel iste ea aliquid quia similique suscipit mollitia maxime<br> 
+           nisi itaque eos nulla provident voluptatibus optio?<br>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+           Dolor exercitationem debitis nostrum corporis. Debitis, <br>
+           vel iste ea aliquid quia similique suscipit mollitia maxime <br>
+           Dolor exercitationem debitis nostrum corporis. Debitis, <br>
+           vel iste ea aliquid quia similique suscipit mollitia maxime <br>
+           nisi itaque eos nulla provident voluptatibus optio?</p>
+        <img class="pic1" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dHJhdmVsfGVufDB8fDB8fHww" 
+        alt="여행사진1" width="40%">
+    </article>
+    <article class="sec2">
+        <p class="sec2_p2">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
+            Dolor exercitationem debitis nostrum corporis. Debitis, <br>
+            vel iste ea aliquid quia similique suscipit mollitia maxime <br>
+            nisi itaque eos nulla provident voluptatibus optio?<br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+            Dolor exercitationem debitis nostrum corporis. Debitis, <br>
+            vel iste ea aliquid quia similique suscipit mollitia maxime <br>
+            Dolor exercitationem debitis nostrum corporis. Debitis, <br>
+           vel iste ea aliquid quia similique suscipit mollitia maxime <br>
+            nisi itaque eos nulla provident voluptatibus optio?</p>
+        <img class="pic2" src="https://images.unsplash.com/photo-1707344088547-3cf7cea5ca49?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxzZWFyY2h8OHx8dHJhdmVsfGVufDB8fDB8fHww" 
+        alt="여행사진2" width="40%">
+    </article>
+    </section>
+    </div>
+</body>
+</html>

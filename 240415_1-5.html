@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /**, html, body{초기값 세팅}*/
+        *{
+            margin: 0 auto;
+        }
+        .block{
+            width: 800px;
+            margin: 0 auto;
+        }
+        header{
+            margin-top: 30px;
+            width:800px;
+            height:60px;
+            background-color: green;
+            color: white;
+        }
+        header h2{
+            /*margin-top: 30px;*/
+            padding: 10px;
+        }
+        .col1{
+            float: left;
+            border: 1px solid red;
+            width: 200px;
+        }
+        .col1_p{
+            font-size: 20pt;
+            margin-top: 10px;
+            padding-top: 10px;
+            margin-bottom: 10px;
+        }
+        .col2{
+            float: right;
+            border: 1px solid red;
+            width: 550px;
+            height: 220px;
+        }
+        .pic1{
+            float:left;
+        }
+        .text{
+            float:right;
+        }
+        .text ul li{
+            list-style-type: none;
+            padding-bottom: 12px;
+            border-bottom: 1px solid lightgray;
+        }
+        .text span{
+            font-size: 18pt;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+    <header>
+        <h2>기업 연혁</h2>
+    </header>
+    <section>
+        <article class="col1">
+            <h3>2018 ~ 현재</h3>
+            <p class="col1_p">환경과 사람을<br>
+            존종하는 기업<br>
+           '환경 사랑'</p><br>
+            <small>환경 관련 우수기업
+            대통령상을 수상하다.</small>
+        </article>
+        <article class="col2">
+            <img class="pic1" src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+            alt="환경사진" width="200" border="5">
+            <div class="text">
+                <ul>
+                    <li><span>2021</span> 환경사랑 수원 전시장 오픈</li>
+                    <li><span>2020</span> 환경사랑 광주 전시장 오픈</li> 
+                    <li><span>2019</span> 환경사랑 대전 전시장 오픈</li> 
+                    <li><span>2018</span> 환경사랑 서울 전시장 오픈</li> 
+                </ul>
+            </div>
+        </article>
+    </section>
+    <section>
+        <figure></figure>
+    </section>
+</div>
+</body>
+</html>

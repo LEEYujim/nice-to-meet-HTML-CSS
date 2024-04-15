@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*inherit:상속-이어간다 기본값
+        initial:축약-초기값 기본값2*/
+        body{
+            margin: 0 auto;/*기본 가운데 정렬을 유도*/
+            padding: 0;
+        }
+        div{
+            margin-top: 100px;
+            margin-left: 30%;
+            width: 100px;
+            height: 100px;
+            background-color: seagreen;
+            /*border(외곽,테두리)선과 관련된 영어(용어)line, stroke, through*/
+            /*선을 간단히 사용할 때*/
+            border: 1px solid black;/*실선 스타일, 기본값두께, 기본선색상*/
+            /*모서리 둥글게*/
+            border-radius: 10px;
+            /*태두리 방향별*/
+            border-bottom: 1px solid black;
+            border-top: 3px dotted blue;
+            border-left: 10px dashed aquamarine;
+            border-right:;
+            /*모서리 색상*/
+            border-color:;
+            /*모서리 스타일*/
+            border-style:;
+
+            /*모서리 두께*/
+            border-width: medium; /*font-weight로 치면 400~600*/
+            border-width: thick;/*font-weight로 치면 700~900*/
+            border-width: thin;/*font-weight로 치면 100~300*/
+            border-width: 5px;/*직접 수치 입력가능*/
+        }
+        figure{
+            width: 150px;
+            height: 150px;
+            background-color: burlywood;
+            border: solid green;
+            border-width: 1px 5px 15px 10px;/*테두리 두께 순서 위 오른쪽 아래 왼쪽 순으로*/
+            border-width: 0 10px;/*상하, 좌우로 압축하여 작성*/
+        }
+        article{
+            margin-top: 250px;
+            margin-left: 20rem;
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+            border-radius: 50%;
+            border: 10px solid rgb(236, 110, 96);
+            border-width: 1px 5px 15px 10px;
+        }
+        aside{
+            margin-top: 20px;
+            margin-left: 30rem;
+            width: 600px;
+            height: 300px;
+            background-color: yellowgreen;
+            /*border-radius: 10px 30px 50px 5px;*//*왼쪽상단 오른쪽상단 오른쪽하단 왼쪽하단*/
+            border-radius: 10px;/*대각선끼리 값은 값*/
+        }
+        nav{
+            width: 400px;
+            height: 650px;
+            margin-top: 30px;
+            margin-left: 40rem;
+            background-color: blue;
+            border-style: dashed;
+            border: 5px rgb(209, 118, 118) none;
+            /*dashed:긴점선-일러스트레이터에서도 보았던 용어
+              dotted:동글동글점선
+              solid:실선
+              double:이중선
+              groove:등고, 입체적인 선을 만들고자 하는 속성값1
+              ridge:산등성이, 산마루 입체적인 선을 만들고자 하는 속성값2
+              inset, ouset:옛버전 입체
+              hidden:없앤게 아니고 감추다.
+              none:없는 값*/
+        }
+        
+    </style>
+</head>
+<body>
+    <div></div>
+    <figure></figure>
+    <article></article>
+    <aside></aside>
+    <nav></nav>
+    
+</body>
+</html>
