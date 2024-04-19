@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: cornflowerblue;
+            border: 2px dashed blue;
+            border-radius: 50%;
+            padding: 15px;
+            margin: 10px;
+            float: left;
+            opacity: .3;
+
+            transition-duration: 0.5s;
+            transition-property: all;
+        }
+        .box:hover{
+            transform: translate(0PX, 25px);
+            opacity: 1;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(237, 194, 100);
+            border: 2px dashed rgb(255, 0, 200);
+            border-radius: 50%;
+            padding: 15px;
+            margin: 10px;
+
+            transition-duration: 0.5s;
+            transition-property: all;
+        }
+        .box2:hover{
+            transform: translate(300px, 50px);
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(255, 107, 198);
+            border: 2px dashed rgb(255, 0, 200);
+            padding: 15px;
+            margin: 10px;
+
+            transition-duration: 5s;
+            transition-property: all;
+        }
+        .box3:hover{
+            transform: rotate(36000deg);
+        }
+
+
+          
+        
+    </style>
+</head>
+<body>
+    <h2>마우스 올려보기</h2>
+    <div class="box">🧡</div>
+    <div class="box">💛</div>
+    <div class="box">💚</div>
+    <div style="clear:left;"></div>
+    <br>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    
+</body>
+</html>
