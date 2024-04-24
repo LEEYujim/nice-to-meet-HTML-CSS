@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article{
+            background-color: tomato;
+            max-width: 1000px; /*디바이스 너비에 반영을 시킨다*/
+            height: 100vh;
+            margin: 0 auto;
+            /*justify-content: space-between;
+            display: flex;*/
+        }
+        .box{
+            background-color: aqua;
+            width: 22em;
+        }
+        
+        .box:first-of-type{
+            float: left;
+        }
+        .box:last-of-type{
+            float: right;
+        }
+        /*
+        @media (min-width: 640px) {
+            article{
+                display: flex;
+                justify-content: space-between;
+            }
+            .box{
+                width: 30%;
+
+            }
+        }*/
+        /*일반 피씨화면*/
+        @media (max-width: 1400px) {
+            article{
+                display: flex;
+                justify-content: space-between;
+            }
+            .box{
+                width: 100%;
+
+            }
+        }
+        /*작은 피씨화면*/
+        @media (min-width: 640px and max-width: 1200px) {
+            article{
+                display: flex;
+                justify-content: space-between;
+            }
+            .box{
+                width: 70%;
+
+            }
+        }
+        /*태블릿화면*/
+        @media (min-width: 640px and max-width: 860px) {
+            article{
+                display: flex;
+                justify-content: space-between;
+            }
+            .box{
+                width: 50%;
+
+            }
+        }
+
+        /*모바일 화면*/
+        @media (min-width: 640px) {
+            article{
+                display: flex;
+                justify-content: space-between;
+            }
+            .box{
+                width: 30%;
+
+            }
+        }
+    </style>
+</head>
+<body>
+<article>
+    <div class="box">
+        <h1>text</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, recusandae illum eum consequuntur neque officia voluptatum quia et aliquam doloribus.</p>
+    </div>
+    <div class="box">
+        <h1>text</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, recusandae illum eum consequuntur neque officia voluptatum quia et aliquam doloribus.</p>
+    </div>
+</article>
+</body>
+</html>
