@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            position: absolute;
+            /*디쟌*/
+            background-color:coral;
+            width: 250px;
+            height: 250px;
+
+            /*기본 움직임*/
+            animation-name: move;
+            animation-duration: 10s; /*~동안*/
+            animation-fill-mode: backwards; /*마치고 상태 유지 or 백*/
+            animation-play-state: paused; /*처음 상태 실행상태, 정지*/
+        }
+
+        @keyframes move {
+            from{
+                left:0;
+            }
+            to{
+                left: 300px;
+            }
+        }
+        #start{
+            position: absolute;
+            top: 300px;
+            left: 100px;
+        }
+        #paused{
+            position: absolute;
+            top: 300px;
+            left: 200px;
+            
+    </style>
+    </head>
+    <body>
+        <div></div> <!--코드명 : box-->
+        <button id="start">시작!</button>
+        <button id="paused">멈춰!</button>
+        
+        <!--통제, 제어, 관리-->
+        <script>
+            var x /*X라는 변수는...var(라떼), => let(매개변수), const(상수)*/ = /*값이 2다.*/2;
+            const box = document.querySelector("div");
+            document.getElementById("start").addEventListener("click", function(){
+                box.style.animationPlayState = "running";
+            });
+            document.getElementById("paused").addEventListener("click", function(){
+                box.style.animationPlayState = "paused";
+            });
+            /*querySelector = 선택자 <- 부여받을 대상*/        
+        </script>
+    </body>
+    </html>
