@@ -1,0 +1,77 @@
+/* 공통 */
+html, body {
+	overflow-x: hidden; /* x축 스크롤 숨기기 */
+}
+
+/* 타이틀 */
+.title {
+	font-size: 18px; /* 폰트사이즈 18px */
+	text-align: center; /* 텍스트 중앙 정렬 */
+	margin-bottom: 20px; /* 바깥 아래 여백 20px */
+}
+
+/* 라인 */
+.line {
+	background: #000; /* 배경색 #000 */
+	width: 20px; /* 너비 20px */
+	height: 4px; /* 높이 4px */
+	margin: 0 auto 20px auto; /* 바깥 여백 : top right bottom left */
+}
+
+/* 헤더 영역 */
+header {
+	width: 1600px; /* 너비 1600px */
+	display: flex; /* flex container(부모요소)에 display: flex; 선언 */
+	margin: 0 auto; /* 블록 요소 가운데 정렬 */
+	font-size: 0; /* 인라인 혹은 인라인-블록요소 속성으로 인한 공백 없애기 */
+}
+
+/* 헤더 영역 a링크 */
+header > div > a {
+	width: 100%; /* 너비 100% */
+	height: 100%; /* 높이 100% */
+	display: block; /* 인라인 요소를 블록요소로 변경 */
+}
+
+/* 네비게이션 */
+nav {
+	width: 1400px; /* 너비 1400px */
+	height: 99px; /* 높이 99px */
+	padding: 0 40px; /* 좌우 내부 여백 40px */
+	line-height: 99px; /* 인라인 요소 세로 중앙 정렬 */
+	display: flex; /* flex container(부모 요소)에 display: flex; 선언 */
+	justify-content: space-between;
+	/* flex container(부모 요소)에 justify-content정렬 방식 설정 */
+	/* space-between 좌우 여백 없이 사이 여백 균등하게 배치 */
+}
+
+/* 로고 */
+.logo > img {
+	vertical-align: middle; /* 인라인 또는 인라인-블록 요소 세로 중앙 정렬 */
+}
+
+/* 주 메뉴 */
+nav .gnb {
+	width: 380px; /* 너비 380px */
+	display: flex; /* flex container(부모요소)에 display: flex; 선언 */
+	justify-content: space-between;
+	/* flex container(부모 요소)에 justify-content정렬 방식 설정 */
+	/* space-between 좌우 여백 없이 사이 여백 균등하게 배치 */
+	margin: 0 auto; /* 블록 요소 가운데 정렬 */
+}
+
+nav .gnb > li > a {
+	font-size: 16px; /* 폰트 사이즈 16px */
+	color: #333333; /* 폰트 색상 #333 */
+}
+
+/* 전체 콘텐츠 영역 */
+#wrapper {
+	width: 1600px; /* 너비 1600px */
+	margin: 0 auto; /* 블록 요소 가운데 정렬 */
+}
+
+/* 콘텐츠 영역① */
+#section01 {
+	margin-bottom: 80px; /* 아래 바깥 여백 80px */
+}
