@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .슬라이드박스{
+            position: relative;/*float과 비슷한 형태로, 사용하면서 깊이가 생겨나는 형태*/
+            /*z-index: ; 형식 포지션과 같이 사용이 됩니다.*/
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .슬라이드{
+            position: absolute;
+            width: 100%;
+            opacity: 0;/*투명*/
+            animation: fader 6s infinite;
+        }
+        .슬라이드:first-of-type{
+            animation-delay: 0s;
+        }
+        .슬라이드:nth-of-type(2){
+            animation-delay: 2s;
+        }
+        .슬라이드:last-of-type{
+            animation-delay: 4s;
+        }
+        @keyframes fader{
+            0%{opacity: 0;}
+            35%{opacity: 1;}
+            100%{opacity: 0;}
+        }
+        .배너{
+            position: absolute;
+            top: 10%;
+            left: 40%;
+            z-index: 100;
+            color: antiquewhite;
+        }
+        .배너 button{
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <!--슬라이드영역-->
+    <div class="슬라이드박스">
+        <div class="슬라이드">
+            <img width="500px" src="https://images.unsplash.com/photo-1533038590840-1cde6e668a91?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </div>
+        <div class="슬라이드">
+            <img width="500px" src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </div>
+        <div class="슬라이드">
+            <img width="500px" src="https://images.unsplash.com/photo-1546842931-886c185b4c8c?q=80&w=1585&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </div>
+    </div>
+    <!--배너영역-->
+    <div class="배너">
+        <h1>슬라이드 위에 떠있는 텍스트...</h1>
+        <button>단추</button>
+    </div>
+    
+</body>
+</html>

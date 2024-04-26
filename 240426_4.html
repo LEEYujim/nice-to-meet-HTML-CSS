@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .슬라이드박스{
+            width: 500px;
+            position: relative;
+            margin: 0 auto;
+        }
+        .슬라이드{
+            display: none;
+        }
+        .효과{
+            animation-name: 효과이다;
+            animation-duration: 2s;
+        }
+
+        @keyframes{
+            from {opacity: 0.2;}
+            to{opacity: 1;}
+        }
+        /*.슬라이드:nth-of-type(2){
+            visibility: hidden;
+        }*/
+    </style>
+</head>
+<body>
+        <!--슬라이드 영역-->
+        <div class="슬라이드박스">
+            <div class="슬라이드 효과">
+                <img width="500px" src="https://cdn.pixabay.com/photo/2019/05/04/21/42/blue-4179147_960_720.jpg" alt="">
+            </div>
+            <div class="슬라이드 효과">
+                <img width="500px" src="https://cdn.pixabay.com/photo/2019/05/03/13/19/lily-of-the-valley-4175855_1280.jpg" alt="">
+            </div>
+            <div class="슬라이드 효과">
+                <img width="500px" src="https://cdn.pixabay.com/photo/2016/02/17/19/08/lotus-1205631_1280.jpg" alt="">
+            </div>
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("슬라이드");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              slides[slideIndex-1].style.display = "block";  
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+      </script>
+</body>
+</html>
