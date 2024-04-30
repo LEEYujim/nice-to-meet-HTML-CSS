@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 06 CSS3 속성</title>
+    <style>
+        div{
+            font-weight: ;
+            border-width: ;
+            font-style: ;
+        }
+        .코드_배경{
+            width: 600px;
+            height: 500px;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chapter 06 CSS3 속성 미니테스트</h1>
+
+    <fieldset>
+        <legend>01 다음 빈칸에 알맞은 단어를 넣으시오.</legend>
+        <ul>
+            <li><span>&lpar; <b>박스 속성</b> &rpar;</span>에는 margin 속성, border 속성, padding 속성, width 속성, height 속성이 포함됩니다.</li>
+            <li>테두리 두께는 <span>&lpar; <b>border-width 속성</b>   &rpar;</span>으로 입력하고, 테두리 형태는 <span>&lpar;<b>border-style 속성</b>&rpar;</span>으로 입력하며, <br>
+                테두리 색상은 &lpar; <b>border-color  속성</b> &rpar; 으로 입력합니다.</li>
+            <li>( <b>border-radius 속성</b> ) 을 사용하면 박스의 테두리를 둥글게 만들 수 있습니다.</li>
+            <li>( <b>display  속성</b> ) 에 none 키워드를 적용하면 태그가 화면에서 보이지 않습니다.</li>
+            <li>background-(  <b>image</b> ) 속성은 배경 이미지를 넣을 때 사용합니다.</li>
+            <li>background-(  <b>size</b>  ) 속성은 배경 이미지 크기를 지정합니다.</li>
+            <li>background-(   <b>repeat</b>  ) 속성은 배경 이미지의 반복 형태를 지정합니다.</li>
+            <li>background-(  <b>attachment</b>  ) 속성은 배경 이미지를 화면에 고정합니다.</li>
+            <li>background-(  <b>position</b>  ) 속성은 배경 이미지의 배치를 지정합니다.</li>
+            <li>font-( <b>size</b> ) 속성은 글자 크기를 지정합니다.</li>
+            <li>font-(  <b>family</b>          ) 속성은 글꼴을 지정합니다.</li>
+            <li>( <b>세리프</b> )글꼴(명조체)은 모서리가 뾰족한 글자를 의미합니다.</li>
+            <li>(    <b>산-세리프</b>  ) 글꼴(고딕체)은 모서리가 네모진 글자를 의미합니다.</li>
+            <li>font-( <b>style</b> ) 속성은 글자 스타일(기울기 등)을 지정합니다.</li>
+            <li>font-(  <b>weight</b> ) 속성은 글자 두께를 지정합니다.</li>
+            <li>( <b>text-align</b> ) 속성은 글자 정렬을 지정합니다.</li>
+            <li>( <b>line-height</b>  ) 속성은 글의 높이(줄 간격)를 지정합니다.</li>
+            <li>( <b>position</b> ) 속성은 요소의 위치 지정 형식을 설정할 때 사용합니다.</li>
+            <li>( <b>overflow</b> ) 속성은 내용이 요소 크기를 벗어나 모두 보여 주기 힘들 때 어떻게 보여 줄지를 지정합니다.</li>
+            <li>( <b>box-shadow</b> ) 속성은 박스에 그림자를 부여합니다.</li>
+            <li>(  <b>text-shadow</b> ) 속성은 글자에 그림자를 부여합니다.</li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>02 다음 질문에 OX를 표시하시오.</legend>
+        <ol>
+            <li>inline 형식의 태그에는 width 속성과 height 속성이 적용되지 않으며, margin 속성과 padding 속성은 좌우로만 적용됩니다. (  0  )</li>
+            <li>inline-block 형식의 태그는 width 속성과 height 속성이 지정되며, margin 속성과 padding 속성이 상하좌우로 적용됩니다. (  0  )</li>
+            <li>block 형식의 태그는 width 속성과 height 속성이 지정되며, margin 속성과 padding 속성이 상하좌우로 적용됩니다. ( 0 )</li>
+            <li>background-image 속성에는 이미지를 하나만 지정할 수 있습니다. ( X )</li>
+            <li>font-family 속성에 글꼴을 여러 개 지정하는 것은 아무런 의미가 없습니다. ( X )</li>
+            <li>일반적으로 (기본)웹 브라우저의 글자 기본 크기는 16px입니다. ( 0 )</li>
+            <li>기본적인 글꼴 두께 값은 400입니다. (  0  )</li>
+            <li>inline 형식의 태그에는 text-align 속성을 지정해도 의미가 없습니다. (  X  )</li>
+            <li>요소들은 기본적으로 절대 좌표계를 사용합니다. (  X  )</li>
+            <li>z-index 속성의 숫자가 클수록 앞에 위치합니다. (  0  )</li>
+            <li>overflow 속성을 hidden으로 지정하면 영역을 넘은 부분을 보이지 않게 만듭니다. <br>
+                이때 스크롤을 사용해 보이지 않게 된 부분을 볼 수 있습니다. ( X )</li>
+        </ol>
+    </fieldset>
+
+    <fieldset>
+        <legend>03 다음 중 CSS에서 사용할 수 없는 크기 단위는? (  2  )</legend>
+        <ol>
+            <li>① cm</li>
+            <li>② m</li>
+            <li>③ em</li>
+            <li>④ px</li>
+        </ol>
+    </fieldset>
+
+    <fieldset>
+        <legend>04 다음 속성 중 글자 색상을 지정하는 속성은? (  3  )</legend>
+        <ol>
+            <li>① font-color</li>
+            <li>② text-color</li>
+            <li>③ color</li>
+            <li>④ background-color</li>
+        </ol>
+    </fieldset>
+
+    <fieldset>
+        <legend>05 다음 속성 중 박스와 관련한 속성이 아닌 것은? (  4  )</legend>
+        <ol>
+            <li>① border</li>
+            <li>② margin</li>
+            <li>③ padding</li>
+            <li>④ direction</li>
+        </ol>
+    </fieldset>
+
+    <fieldset>
+        <legend>06 다음 중 배경 이미지로 background.png를 올바르게 지정한 것은? (  1  )</legend>
+        <ol>
+            <li>① background: url (‘background.png’)</li>
+            <li>② background: image(‘background.png’)</li>
+            <li>③ background: png(‘background’)</li>
+            <li>④ background: background as png</li>
+        </ol>
+    </fieldset>
+
+    <fieldset>
+        <legend>07 다음 중 position 속성을 absolute로 지정한 절대 좌표계에서 <br>
+            위치를 지정할 때 사용하는 속성이 아닌 것은?(  2  )</legend>
+        <ol>
+            <li>① top</li>
+            <li>② lower</li>
+            <li>③ left</li>
+            <li>④ right</li>
+        </ol>
+    </fieldset>
+
+    <fieldset>
+        <legend>08 다음 스타일이 적용되는 태그 너비를 구하시오.</legend>
+        <div class="코드_배경">
+                💡
+                .box &lcub;
+                    margin: 0 20px;
+                    border: 5px solid black;
+                &rcub;
+        </div>
+        <br>
+        <form action="">
+            <input type="text" col="60" name="" id="" placeholder=" ( 150 ) 픽셀">
+            <button><a href="./240430_2.html#answer1" target="_self">바로가기</a></button>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>09 다음 코드와 같이 background-image 속성을 적용했을 때, 이미지 A와 이미지 B 중 어떤 이미지가 위쪽에 위치하는가?</legend>
+        <div class="코드_배경">
+                💡
+                &lt;style&gt;
+                background-image: 이미지 A, 이미지 B;
+                &lt;/style&gt;
+        </div>
+        <form action="">
+            <input type="text" col="60" name="" id="" placeholder=" 정답 : 이미지 A가 먼저 나와서 가리게 된다.">
+            <button><a href="./240430_2.html#answer2" target="_self">바로가기</a></button>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>10 다음 코드의 실행 결과를 그리시오.</legend>
+        <div class="코드_배경">
+            💡
+            &lt;!DOCTYPE html>
+                &lt;head>
+                    &lt;style>
+                        width: 100px;
+                        background-color: red;
+                        margin: 10px;
+                    &lt;/style>
+                &lt;/head>
+                &lt;body>
+                    &lt;div class="box">&lt;h1>2&lt;/h1>&lt;/div>
+                &lt;/body>
+        </div>
+        <br>
+        <button><a href="./240430_2.html#answer3" target="_self">바로가기</a></button>
+    </fieldset>
+
+    <fieldset>
+        <legend>11 다음과 같이 HTML을 구성하고 스타일을 적용하시오.</legend>
+        <p><em>Hint 입력 양식의 테두리는 border 관련 속성으로 조정할 수 있습니다.</em></p>
+        <div class="코드_배경">
+            💡
+            &lt;style>
+                body&lcub; background: gray;
+                input &lcub;
+                    border: none
+                    background-color: white;
+                    &rcub;
+            &lt;/style>
+            &lt;body>
+                &lt;form action="">
+                    &lt;table>
+                        &lt;tr>&lt;td>&lt;input type="text">&lt;/td>&lt;/tr>
+                        &lt;tr>&lt;td>&lt;input type="text">&lt;/td>&lt;/tr>
+                        &lt;tr>&lt;td>&lt;input type="submit">&lt;/td>&lt;/tr>
+                    &lt;/table>
+            &lt;/body>
+            </div>
+            <br>
+            <img src="./" alt="위 코드 캡쳐본..">
+    </fieldset>
+
+    <fieldset>
+        <legend>12 다음과 같이 HTML을 구성하고 스타일을 적용하시오.</legend>
+        <div class="코드_배경">
+        
+            <caption>💡</caption>
+            <ol>
+                <li>이미지를 원형으로 만들 때는 border-radius: 50%를 사용합니다.</li>
+                <li>이미지의 오른쪽과 아래쪽 부분에만 여백이 있습니다.</li>
+                <li>고양이 이미지는 http://placekitten.com/150/150을 img 태그의 src 속성에 넣어 구했습니다.</li>
+            </ol>
+        </div>
+        <br>
+        <img src="./" alt="위 코드 캡쳐본..">
+    </fieldset>
+
+    <fieldset>
+        <legend>13 다음과 같이 HTML을 구성하고 스타일을 적용하시오.</legend>
+        <div class="코드_배경">
+            <ol>
+                <li>카드는 div 태그 등으로 HTML을 구현하고, 박스 속성을 주어 크기를 조정합니다.</li>
+                <li>글자가 모두 중앙 정렬되어 있습니다. 어떤 속성을 사용해야 할까요?</li>
+                <li></li>
+            </ol>
+        </div>
+        <br>
+        <img src="./" alt="완성이미지...">
+    </fieldset>
+</body>
+</html>
