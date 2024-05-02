@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0;
+        }
+        .container{
+            margin: 50px auto;
+            padding: 30px;
+            line-height: 30px;
+            width: 40%;
+            height: 100%;
+            background: lightgoldenrodyellow;
+
+        }
+        h1{
+            margin-bottom: 50px;
+            line-height: 110%;
+        }
+        p{
+            margin-bottom: 30px;
+        }
+        div{
+            background: lightgray;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>다양한 레이아웃의 구성과 기능 미니테스트</h1>
+        <h3>01 다음 질문에 OX를 표시하시오.</h3>
+        <p>1. 어떤 요소를 수평으로 차근차근 정렬할 때는 자손에게 f loat 속성을 지정하고, 부모의
+            overf low 속성은 hidden으로 적용합니다. (O)<br>
+            2. 어떤 요소를 화면 중앙에 정렬하고 싶을 때는 {m argin: auto }를 사용합니다. (X)<br>
+            3. 절대 위치로 요소를 배치할 때는 {p osition: absolute }를 사용합니다. (O)<br>
+            4. 요소를 고정 위치에 배치할 때는 {p osition: fixed }를 사용합니다. (O)<br>
+        </p>
+        <h3>02 다음과 같은 네이버 메인 페이지의 기본 형태를 단계별로 구현하시오.</h3
+        <p>1. 다음 코드에 스타일을 적용해 그림과 같이 레이아웃을 구성합니다
+            (색상은 원하는 대로 지정합니다) 처음 레이아웃을 구성하면 조금 어려울 수 있으므로,
+            간단하게 지시 사항 1~7을 붙여 나타냈습니다. 차근차근 만들어 보세요.</p>
+        <div>&lt;!-- 1. 너비 1080px의 컨테이너를 만듭니다. --&gt;<br>
+            &lt;!-- 2. 컨테이너를 중앙 정렬합니다. --&gt;<br>
+            &lt;!-- 3. 아래 margin을 8px로 줍니다. --&gt;<br>
+            &lt;div class="container"&gt;<br>
+                &lt;!-- 4. div.left를 왼쪽에 붙이고 --&gt;<br>
+                &lt;!-- 5. 너비 740px, 높이 428px로 크기를 잡습니다. --&gt;<br>
+                &gt;div class="left"&gt;/div&gt;<br>
+            &lt;!-- 6. div.left를 오른쪽에 붙이고 --&gt;<br>
+            &lt;!-- 7. 너비 332px, 높이 428px로 크기를 잡습니다. --&gt;<br>
+            &lt;div class="right"&gt;&lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+        </div>
+        <p>정답 :</p>
+        <p>2. 다음 코드에 스타일을 적용해 그림과 같이 레이아웃을 구성합니다(색상은 원하는 대로
+            지정합니다). 처음 레이아웃을 구성하면 조금 어려울 수 있으므로, 간단하게 지시 사항
+            1~11을 붙여 나타냈습니다. 차근차근 만들어 보세요.</p>
+        <div>&lt;!-- 1. div.container는 이전 문제와 같습니다. --&gt;<br>
+            &lt;div class="container"&gt;<br>
+                &lt;!-- 2. ul.gnb 태그를 왼쪽에 붙입니다. --&gt;<br>
+                &lt;!-- 3. 위아래 padding을 8px로 줍니다. --&gt;<br>
+                &lt;!-- 4. 왼쪽 오른쪽 padding을 0px로 줍니다. --&gt;<br>
+            다양한 레이아웃의 구성과 기능 미니테스트 2<br>
+            &lt;ul class="gnb"&gt;<br>
+            &lt;!-- 5. 내부의 li 태그들은 list-style-type을 none으로 지정합니다. --&gt;<br>
+            &lt;!-- 6. 내부의 li 태그들은 왼쪽으로 붙여서 나란하게 만듭니다. --&gt;<br>
+            &lt;!-- 7. 내부의 li 태그들은 왼쪽 padding을 16px로 줍니다. --&gt;<br>
+            &lt;li>메일&lt;/li&gt;<br>
+            &lt;li>카페&lt;/li&gt;<br>
+            &lt;li>블로그&lt;/li&gt;<br>
+            &lt;li>쇼핑&lt;/li&gt;<br>
+            &lt;li>사전&lt;/li&gt;<br>
+            &lt;li>뉴스&lt;/li&gt;<br>
+            &lt;li>증권&lt;/li&gt;<br>
+            &lt;li>부동산&lt;/li&gt;<br>
+            &lt;li>지도&lt;/li&gt;<br>
+            &lt;/ul&gt;<br>
+            &lt;!-- 9. ul.rank 태그는 오른쪽에 붙입니다. --&gt;<br>
+            &lt;!-- 10. 위아래 padding을 8px로 줍니다. --&gt;<br>
+            &lt;ul class="rank"&gt;<br>
+            &lt;!-- 11. 내부의 li 태그들은 list-style-type을 none으로 지정합니다. --&gt;<br>
+            &lt;li>실시간 검색 순위&lt;/li&gt;<br>
+            &lt;/ul><br>
+            &lt;/div><br>
+        </div>
+        <p>정답 :</p>
+        <p>3. (1)번 문제와 (2)번 문제를 결합한 후 위아래에 헤더와 푸터를 추가해 그림과 같이 레이
+            아웃을 구성합니다. 처음 레이아웃을 구성하면 조금 어려울 수 있으므로, 간단하게 지시
+            사항을 붙였습니다. 차근차근 만들어 보세요.
+        </p>
+        <div>&lt;!-- 추가합니다. --&gt;<br>
+            &lt;!-- 별다른 스타일 처리 없습니다. --&gt;<br>
+            &lt;div class="container"&gt;<br>
+            &lt;h1>Logo&lt;/h1&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;!-- (2)번 문제와 같습니다. --&gt;<br>
+            &lt;div class="container"&gt;<br>
+            &lt;ul class="gnb"&gt;<br>
+            &lt;li&gt;메일&lt;/li&gt;<br>
+            ...생략...<br>
+            &lt;li&gt;지도&lt;/li&gt;<br>
+            &lt;/ul&gt;<br>
+            &lt;ul class="rank"&gt;<br>
+            &lt;li>실시간 검색 순위&lt;/li&gt;<br>
+            &lt;/ul&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;!-- (1)번 문제와 같습니다. --&gt;<br>
+            &lt;div class="container"&gt;<br>
+            &lt;div class="left"&gt;</div&gt;<br>
+            &lt;div class="right"&gt;</div&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;!-- (1)번 문제와 같습니다: 2개 배치했습니다. --&gt;<br>
+            &lt;div class="container"&gt;<br>
+            &lt;div class="left"></div&gt;<br>
+            다양한 레이아웃의 구성과 기능 미니테스트 3<br>
+            &lt;div class="right"></div&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;!-- 추가합니다. --&gt;<br>
+            &lt;div class="container"><br>
+            &lt;!-- 높이를 80px로 지정했습니다. --&gt;<br>
+            &lt;div class="footer"&gt;</div&gt;<br>
+            &lt;/div&gt;<br>
+        </div>
+        <p>정답 :</p>
+        <p>(4) 굉장히 간단하게 기본 형태를 구현해 보았습니다. 실제 네이버 웹 사이트를 보면, 사각형
+            들
+            의 높이가 조금 다를 것입니다. 최대한 비슷하게 맞춘 후 다른 웹 사이트의 디자인도 분석
+            해서 이러한 형태로 레이아웃을 구성해 보세요. 빨간색 사각형의 너비(740px)와 파란색
+            사각형의 너비(332px)를 합치면 1072px이 됩니다. 여기에 마진으로 지정했던 8px을 더
+            하면, 1080px이 되어 div.container 태그의 너비와 같게 됩니다. 이러한 형태로 숫자를
+            조금씩 계산해 가면서 여백을 맞추어 보세요.
+        </p>
+    </div>     
+</body>
+</html>
