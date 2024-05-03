@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        figure{
+            display: flex;
+            width: 1100px;
+            /*flex-wrap: wrap-reverse;*/
+        }
+        div{
+            background-color: antiquewhite;
+            font-size: 24px;
+        }
+        .item{
+            height: 400px;
+            flex-basis: 400px;
+        }
+        div:first-of-type{
+            flex-shrink: 1;
+        }
+        div:nth-of-type(2){
+            flex-shrink: 2;
+        }
+        div:last-of-type{
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>디스플레이 flex(flexbox)모델</h1>
+    <fieldset>
+        <legend>flex 방식을 사용할 때</legend>
+        <figure>
+            <div>첫번째</div>
+            <div>두번째</div>
+            <div>막내</div>
+        </figure>
+    </fieldset>
+    
+</body>
+</html>

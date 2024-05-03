@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트랜스폼이 뭐야</title>
+    <style>
+        .scale1{
+            width: 400px;
+            height: 400px;
+            background-color: cyan;
+        }
+        .scale1:hover{
+            background-color: rgb(255, 224, 237);
+            /*transform: scaleX(3);x축으로 3배
+            transform: scaleZ(2);공간감이 부여됐을 때 확인
+
+            transform: rotateZ(90deg);공간감이 부여됐을 때 확인
+            transform: skewY(10deg);단축속성, x, y값
+            /*transform: translate(100px, 100px);x축으로 이동하기
+            transform: translateX(100px);Y축으로 이동하기
+            transform: translateY(100px);Y축으로 이동하기
+            transform: translateZ(100px);공간감이 부여됐을 때 확인*/
+            transition: all 1s;
+        }
+        fieldset:nth-of-type(2){
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>트랜스폼의 종류</legend>
+        <ul>
+            <li>크기조절scale</li>
+            <li>회전rotate</li>
+            <li>이동translate</li>
+            <li>기울이기skew(= title, oblique, shear)</li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <div class="scale1"></div>
+    </fieldset>
+</body>
+</html>
