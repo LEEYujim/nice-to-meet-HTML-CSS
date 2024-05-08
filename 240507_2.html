@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*기본스타일*/
+        div{
+            color: aliceblue;
+            font-size: 2rem;
+            font-weight: bold;
+            /*width: 800px;*/
+        }
+
+        /*플렉스방식 : 1차원 디스플레이 모델*/
+        /*부모 플렉스*/
+        article{
+            /**디자인*/
+            width: 1600px;
+            background-color: brown;
+
+            /*플렉스*/
+            display: flex;/*가로화*/
+            justify-content: center; /*수평측 가운데 정렬*/
+            align-items: center; /*수직측 가운데 정렬*/
+
+            /*
+            flex-direction: row; //수평정렬
+            flex-wrap:wrap; //자동 줄바꿈
+            */
+            flex-flow: row wrap;
+            
+            /*
+            column-gap:;
+            row-gap:; line-height와 의미가 유사
+            */
+            gap: 60px;
+        }
+
+        /*자식 플렉스*/
+        .flex-item{
+            flex-basis: 200px; /*플렉스박스에서의 기본 가로값*/
+            height: 400px;
+            background-color: aquamarine;
+        }
+        .flex-item:first-of-type{
+            flex-grow: 2; /*면적의 차이*/
+        }
+        .flex-item:nth-of-type(2){
+            flex-grow: 1;
+        }
+        .flex-item:last-of-type{
+            flex-grow: 0;
+        }
+
+
+
+        /*그리드방식 : 2차원 디스플레이 모델*/
+        /*부모 그리드*/
+        figure{
+            /**디자인*/
+            width: 1600px;
+            background-color: brown;
+
+            /*그리드*/
+            display: grid; /*기본적으로는 세로지향적*/
+            /*
+            grid-template-columns: 400px 400px 400px; //열 생성과 하나의 열에대한 가로값 동시 생성
+            grid-template-columns: repeat(3, 400px); //반복 값이면 축약 가능
+            */
+            grid-template-columns: repeat(3, 1fr 2fr); 
+            grid-auto-rows: minmax(100px, 500px); /*하나의 행에 대한 세로 폭 최소, 최대값을 반영*/
+
+                        /*
+            column-gap:;
+            row-gap:; line-height와 의미가 유사
+            */
+            gap: 60px;
+        }
+
+        /*자식 그리드*/
+        .grid-item{
+            background-color: rgb(175, 12, 167);
+            border: 2px solid yellow;
+        }
+        .grid-item:first-of-type{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .grid-item:nth-of-type(2){
+
+        }
+        .grid-item:last-of-type{
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <article>
+        <div class="flex-item">플렉스네 첫째녀석</div>
+        <div class="flex-item">플렉스네 둘째녀석</div>
+        <div class="flex-item">플렉스네 막내</div>
+    </article>
+    <hr>
+    <figure>
+        <div class="grid-item">그리드네 첫째녀석</div>
+        <div class="grid-item">그리드네 둘째녀석</div>
+        <div class="grid-item">그리드네 막내</div>
+    </figure>
+</body>
+</html>

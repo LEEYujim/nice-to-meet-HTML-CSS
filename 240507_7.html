@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다이아몬드 패스워드</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: cornflowerblue;
+        }
+        fieldset{
+            margin: 0 auto;
+            padding: 50px;
+        }
+    </style>
+    <script>
+        function checkpassword(){
+            var passsword = document.getElementById(passwordbox);
+            var passswordEnter = passsword.value;
+            if (passswordEnter == "Ernest300") {
+                return true;
+            } 
+            alert("패스워드를 잘못 입력하셨습니다, 접근이 불가합니다.");
+                return false;
+        }
+        //창 = 웹화면
+        //var a = 1;//
+        //변수박스 함수박스(계산식)
+    </script>
+</head>
+<body>
+    <fieldset>
+        <h1>The MONK DIAMOND DISCOVERY</h1>
+        <hr>
+        <p>위대한 발견을 살펴보기 위한 비밀번호를 입력해주십시오.</p>
+        <p>비밀번호 : **********
+            <form action="">
+                <label for="passwordbox"></label>
+                <input type="password" name="" id="passwordbox">
+            </form>    
+        </p>
+        <a href="./monkdia.html" target="_top" onclick="return checkpassword();">
+            이 주소를 클릭하면 해당 페이지로 이동합니다.
+        </a>
+    </fieldset>
+    
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: brown;
+            color: aliceblue;
+            font-size: 24px;
+        }
+        figure{
+            width: 1100px;
+            display: flex; /*큰 공간에 제어가 되기 시작하면서, 1행부터 내용을 채우고자 하기 때문에 가로모드*/
+            /*
+            방향
+            flex-direction: row; //display:flex 되었을 때 기본값
+            flex-direction: row-reverse; // x축의 반전 거꾸로
+            flex-direction:column; //열 방식으로 바뀌면서, 세로로
+            flex-direction:column-reverse; // y축의 반전 거꾸로
+            
+            줄바꿈-유도
+            flex-wrap: no-wrap;//같은 한 행에서 버틴다
+            flex-wrap: wrap;//마지막에 오는 요소가 들어갈 공간이 모자르면 자동으로 내려가 다음줄로 배치된다.
+            flex-wrap: wrap-reverse; //덩어리 배치 순서의 거꾸로
+
+            방향 + 줄바꿈-유도 단축속성
+            flex-flow: row wrap;*/
+
+            /*column-gap: 20px;*/
+            gap: 20px;
+
+            justify-content: space-between; /*분포정렬*/
+            align-items: center; /*수직으로서의 가운데 정렬*/
+        }
+
+        /*
+        flex-basis : 요소 크기 auto=기본값(200px)
+        flex-grow : 커지는 값 만드는거
+        flex-shrink : 작아지는 값 만드는 거 + 
+            -flex-wrap: wrap;이면 적용이 안되요, 선언되지 않거나, no-wrap인 상태에서 적용이 가능.
+        */
+
+        /*grow + shrink +basis 단축속성
+            flex: 1 1 auto;*/
+        .item{
+            height: 400px;
+            flex-basis: 200px; /*width값 대체 가능*/
+        }
+        
+        div:first-of-type{
+            /*flex-grow: 2; 부모의 남는여백을 형제요소갯수만큼 나누었을 때*/
+            flex-shrink: 1; /*.아이템 축소될때 같이 축소해줘 = 기본*/
+            
+        }
+        div:nth-of-type(2){
+            /*flex-grow: 1;*/
+            flex-shrink: 2; /*.아이템 축소될때 다른 녀석들보다 내가 더 축소될게*/
+        }
+        div:last-of-type{
+            /*flex-grow: 0;*/
+            flex-shrink: 0; /*나는 축소되고 싶지 않아.*/
+        }
+    </style>
+</head>
+<body>
+    <h1>디스플레이 flex(flexbox)모델</h1>
+    <fieldset>
+        <legend>플렉스 방식을 사용할 때</legend>
+        <figure>
+            <div class="item">첫번째</div>
+            <div class="item">두번째</div>
+            <div class="item">막내</div>
+        </figure>
+    </fieldset>
+</body>
+</html>
