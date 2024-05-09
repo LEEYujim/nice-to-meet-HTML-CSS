@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <div id ="result"></div>
+    <script>
+        var hour_pay = 10000;   // 시간당 급료
+            var hours = 8;      // 근무 시간
+            var time = Number(prompt("1: 주간 근무, 2: 야간 근무:"));
+            var day_night;
+        
+            if (time == 1) {
+                day_night = "주간"; 
+                total_pay = hour_pay * work_time;
+                }
+                else{
+                day_night = "야간"; 
+                total_pay = hour_pay * work_time * 1.5;
+                }
+        
+            var message;
+            message = "- " + day_night + " 근무 시간 : " + work_time + "시간<br>";
+            message += "- 아르바이트 급료 : " + total_pay + "원";
+        
+            document.getElementById("result").innerHTML = message;
+        </script>
+</head>
+<body>
+    
+</body>
+</html>
