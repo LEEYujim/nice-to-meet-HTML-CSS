@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //변수에 담을 수 있는 자료 5가지 데이터형 살펴보기
+        //let age = 20; //숫자(Number)형 데이터
+            //JS에서 사용하는 숫자(Number)는 정수(integer)와 실수(floating point) 두가지를 사용할 수 있습니다.
+            //let x = 3; //변수 박스 X한테 3이라는 숫자형 데이터를 넣었다. =integer 정수형 데이터
+            //let y = 3.84; //변수 박스 y한테 3.84이라는 숫자형 데이터를 넣었다. =floating point 실수형 데이터
+            //z = x + y; //floating point 실수형 데이터
+            //console.log(z); //출력방식중 1, F12 눌러서 웹 브라우저 콘솔에서 확인
+
+        //let email = "dalpongee@gmail.com"; //문자(string)형 데이터
+            //문자형 데이터라 함은, 한글자일수도 있고, 여러 글자일수도 있습니다.
+            //a= 예. 문자열입니다.
+            //abc= 예. 문자열입니다.
+            //나는 달팽이를 위해 칼슘을 주문했습니다.= 예. 문자열입니다.
+            //버전A
+            //var a = "달팽이";
+            //var b = "구피";
+            //document.write(a+"<br>"+b);
+            //버전B
+            //문자열을 표현할 때, ""쌍따옴표로 묶어서 도출하는데, 내부에 또 다른 쌍따옴표를 쓰면 에러난다.
+            //외따옴표로 고치거나, 혹은 사이사이에 \표시를 해주면 해결된다.
+            //var x = "달팽이 이름은 \"달퐁이\" 입니다";
+            //document.write(x);
+
+        //let colors = ["blue", "cadetblue", "darkblue"] //배열(array) 데이터
+            //배열(array)은 하나의 변수박스에 여러 개의 데이터 값을 저장할 수 있는 형식입니다.
+            //[]대괄호로 묶습니다.
+            //배열 안에 있는 것은 0번째부터 세아립니다.
+            //var fruits = ["낑깡", "감말랭이", "곶감", "반건시", "홍시"] // 배열 데이터를 생성
+            //document.write(fruits[1]); //배열 데이터 중 특정 번째 데이터 호출
+            //document.write("<br>");
+            //document.write(fruits[4]); //배열 데이터 중 특정 번째 데이터 호출
+        
+        //let ok = true; //no-false, yes-true 참, 거짓(boolean 부울, 불, 불린, 불리언) 데이터
+            //판별 데이터는 참, 거짓을 표현할 수 있습니다.
+            //참 = true, 거짓 = false
+            //JS에서는 = (할당 연산자) 표시를 좌항과 우항의 연결 통로로 생각합니다.
+            //같다 라는 의미를 나타내려면, 간단한 수리(산술)연산 외에는 == 또는 === (비교연산자-같다)으로 표시합니다.
+            //let x = 7;
+            //let y = 10;
+            //let z = 7;
+            //document.write(x==y);
+            //document.write("<br>");
+            //document.write(x==z);
+        
+        //let member = {name:"홍길동",age:"21",address:"부산"} //객체(object)형 데이터
+            //객체(object) 데이터는 값(value), 키(key)라는 개념이 있습니다.
+            //객체 데이터는 {} 중괄호로 묶어 나타냅니다.
+            
+            let score = {한국사:80, 토익:800, 수학:100}
+            //한국사, 토익, 수학 이라는 속성을 key라고 표현합니다.
+            //80, 800, 100 이라는 값을 value 밸류라고 합니다.
+            total = score.한국사 + score.토익 + score.수학;
+            //Q. 세 개의 속성을 평균내어 화면에 도출해봅시다
+            evg = total/3;
+            document.write("합계"+ total);
+            document.write("<br>");
+            document.write("평균"+ evg);
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+        //기본구문----------
+        //var a;
+        //a = 3;
+        //var a = 3;
+        //document.write(a);
+
+
+        // 기본 출력 할 수 있는 구문 4가지
+        //document.write(a); - 변수나 데이터를 웹문서에 출력할 수 있는 가장 기본적인 방법 중 하나.
+            //var a = 10; //var, let, const -> 변수를 선언하는 선언문이라고 합니다.
+            //var b = 20;
+            //c = a + b;
+            //document.write(c);
+            
+
+        //window.alert(); 또는 alert(); - 웹 브라우저 측에 경고 팝업 창 형태로 띄우는 출력 방식. 가장 기본적인 방법 중 하나. 
+            //var name = "홍길동"; //문자열(프로그래밍 언어에서는 하나 또는 하나 이상의 문자를 String이라고 표현)
+            //alert(name); //문자열 담을 때, "" 또는 ''로 감싸 표현하자!
+
+        //console.log(); - 디버깅(=프로그램의 오류를 찾을 때 살펴본다)할 때 보는 창으로, 간단한 코드를 살펴볼 때도 활용한다.
+            //console.log(10+20);
+    </script>
+
+    <h3>이제 innerHTML을 사용해서 html요소를 추가해보겠습니다😎</h3>
+    <p id="inje"></p>
+
+
+    <script>
+     //.innerHTML - HTML(body)에 요소를 추가하여 출력하는 방식
+        document.getElementById("inje").innerHTML = "오늘 날씨 좋군..👍";
+        //document.getElementById가 35번 라인의 id inje가 달린 p를 데려오고, 이 공간에 innerHTML을 통해 문자열이 추가되었다.
+    </script>
+</body>
+</html>
