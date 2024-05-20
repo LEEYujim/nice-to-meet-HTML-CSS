@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.7.1.js"></script>
+    <style>
+        .box{
+            list-style-type: none;
+        }
+        li{
+            float: left;
+        }
+        li img{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <button>Click Me</button>
+    <ul class="box">
+        <li class="a"><img src="./WEB SUMMARY/Rectangle 3.png" alt=""></li>
+        <li class="b"><img src="./WEB SUMMARY/Rectangle 4.png" alt=""></li>
+        <li class="c"><img src="./WEB SUMMARY/Rectangle 5.png" alt=""></li>
+        <li class="d"><img src="./WEB SUMMARY/Rectangle 6.png" alt=""></li>
+        <li class="e"><img src="./WEB SUMMARY/Rectangle 7.png" alt=""></li>
+        <li class="f"><img src="./WEB SUMMARY/Rectangle 8.png" alt=""></li>
+    </ul>
+    <script>
+        $(function(){
+            $('#btn_01').click(function(){
+                $('ul>li:eq(2)').css('border','2px dotted orange');
+                
+                $('ul>li:lt(2)').css('border','2px dotted orange');
+            });
+            
+            $('ul>li:gt(2)').css('border','2px dotted orange');
+            });
+            });
+            
+        });
+    </script>
+</body>
+</html>

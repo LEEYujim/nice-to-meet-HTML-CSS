@@ -3,141 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>웹디자인기능사 레이아웃 A-1</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="script/jquery.min.js"></script>
-    <script src="script/script.js"></script>
+    <title>주식회사 기능건설</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
-    <div id="wrap">
-        <header id="header">
+    <div class="wrap">
+        <header>
             <h1 class="logo">
-                <a href="#">강원천문대</a>
+                <a href="#"><img src="img/logo.png" alt="기능건설"></a>
             </h1>
-            <nav class="nav">
+            <nav id="gnb">
                 <ul>
-                    <li>
-                        <a href="#">강원천문대</a>
-                        <ul class="submenu">
-                            <li><a href="#">천문대소개</a></li>
-                            <li><a href="#">인사말</a></li>
-                            <li><a href="#">오시는 길</a></li>
+                    <li><a href="#">회사소개</a>
+                        <ul class="sub">
+                            <li><a href="#">기업정보</a></li>
+                            <li><a href="#">CEO인사말</a></li>
+                            <li><a href="#">연혁</a></li>
+                            <li><a href="#">조직도</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#">이용시간</a>
-                        <ul class="submenu">
-                            <li><a href="#">프로그램</a></li>
-                            <li><a href="#">관람시간표</a></li>
-                            <li><a href="#">이달의 별자리</a></li>
+                    <li><a href="#">지속가능경영</a>
+                        <ul class="sub">
+                            <li><a href="#">윤리경영</a></li>
+                            <li><a href="#">품질경영</a></li>
+                            <li><a href="#">안전경영</a></li>
+                            <li><a href="#">환경경영</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#">천문대예약</a>
-                        <ul class="submenu">
-                            <li><a href="#">예약하기</a></li>
-                            <li><a href="#">예약확인</a></li>
-                            <li><a href="#">예약취소</a></li>
+                    <li><a href="#">사업분야</a>
+                        <ul class="sub">
+                            <li><a href="#">건축사업</a></li>
+                            <li><a href="#">토목사업</a></li>
+                            <li><a href="#">주택사업</a></li>
+                            <li><a href="#">환경/플랜트</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#">커뮤니티</a>
-                        <ul class="submenu">
-                            <li><a href="#">공지사항</a></li>
-                            <li><a href="#">방문후기</a></li>
-                            <li><a href="#">자유게시판</a></li>
+                    <li><a href="#">홍보센터</a>
+                        <ul class="sub">
+                            <li><a href="#">뉴스</a></li>
+                            <li><a href="#">분양뉴스</a></li>
+                            <li><a href="#">CI/BI</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
         </header>
-
-        <aside id="slider">
-            <div class="sliderwrap">
-                <div class="slider">
-                    <a href="#"><img src="https://images.unsplash.com/photo-1464802686167-b939a6910659?q=80&w=2350&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="천문과학교육관 소개"></a>
-                    <div class="text">
-                        <h2>천문과학교육관 시설 소개</h2>
-                        <p>영상강의실로 놀러오세요!</p>
-                    </div>
-                </div>
-                <div class="slider">
-                    <a href="#"><img src="https://images.unsplash.com/photo-1538370965046-79c0d6907d47?q=80&w=2369&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="천문과학교육관 이용안내"></a>
-                    <div class="text">
-                        <h2>천문과학교육관 이용안내</h2>
-                        <p>어린이를 위한 천문 과학관!</p>
-                    </div>
-                </div>
-                <div class="slider">
-                    <a href="#"><img src="https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="천문과학교육관 소개"></a>
-                    <div class="text">
-                        <h2>별을 보는 고용한 정상</h2>
-                        <p>강원천문대로 놀러오세요!</p>
-                    </div>
-                </div>
+        <div class="slide">
+            <ul>
+                <li class="s1">
+                    <a href="#">
+                        <h2><span>기능건설</span>양도양수 전문기업</h2>
+                    </a>
+                </li>
+                <li class="s2">
+                    <a href="#">
+                        <h2>정직한 견적, 깔끔한 마무리 전문기업</h2>
+                    </a>
+                </li>
+                <li class="s3">
+                    <a href="#">
+                        <h2>믿을 수 잇는 기업 주식회사 <span>기능건설</span></h2>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="link">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/business.png" alt="견적접수"> 견적접수
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/comment.png" alt="온라인상담"> 온라인상담
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/web_asset.png" alt="자료실"> 자료실
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/account_balance.png" alt="공사실적"> 공사실적
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/call.png" alt="전화상담"> 전화상담
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </aside>
-
-        <main id="contents">
-            <section class="info">
-                <h3 class="info-menu">
-                    <a href="#" class="active">공지사항</a>
-                    <a href="#">갤러리</a>
-                </h3>
-                <div class="info-cont">
-                    <div class="notice">
-                        <ul>
-                            <li><a href="#" class="popup-btn">강원천문대 2023년 휴관일 안내</a><span>2023.05.01</span></li>
-                            <li><a href="#">강원천문대 2023년 온라인 예매 안내</a><span>2023.05.02</span></li>
-                            <li><a href="#">강원천문대 2023년 휴관일 및 이벤트 안내</a><span>2023.05.03</span></li>
-                            <li><a href="#">강원천문대 2023년 주자장 이용 및 숙박 안내</a><span>2023.05.04</span></li>
-                        </ul>
+            <div class="banner">
+                <a href="#">
+                    <p class="imgBox">
+                        <img src="img/banner.jpg" alt="창립 20주년 기념행사">
+                    </p>
+                    <div class="txtBox">
+                        <h2>2023 주식회사 기능건설 창립 20주년 기념행사</h2>
+                        <p class="date">2023-12-13</p>
+                        <p class="txt">주식회사 기능건설이 2002년에 창립되어 올해로 20주년을 맞게 되었습니다<br>
+                        한강 유람선에서 전직원과 함께한 창립 20주년 기념행사 현장스케치를 함께 보도록 할까요?</p>
                     </div>
-                    <div class="popup-view">
-                        <h3>강원천문대 공지사항</h3>
-                        <p>
-                            2023년 하반기 천체 관측 프로그램 참가 신청 안내
-                            안녕하세요. 강원천문대입니다. 2023년 하반기 천체 관측 프로그램에 참가하실 분들을 모집하고 있습니다.
-                            관심있는 분들은 많은 연락바랍니다.
-                        </p>
-                        <a href="#" class="popup-close">닫기</a>
-                    </div>
-                    <div class="gallery">
-                        <ul>
-                            <li><a href="#"><img src="https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="독일 천문대"></a></li>
-                            <li><a href="#"><img src="https://images.unsplash.com/photo-1462332420958-a05d1e002413?q=80&w=2414&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="미국 천문대"></a></li>
-                            <li><a href="#"><img src="https://images.unsplash.com/photo-1502134249126-9f3755a50d78?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="영국 천문대"></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section class="banner">
-                <h3>강원천문대 온라인 예매하기</h3>
-                <a href="#">예매하기</a>
-            </section>
-            <section class="link">
-                <h3>이달의 별자리 구경하기</h3>
-                <a href="#">바로가기</a>
-            </section>
-        </main>
-        <footer id="footer">
-            <div class="footer1">
-                <h4>강원천문대</h4>
+                    <p class="arrow">
+                        <img src="img/arrow.png" alt="바로가기">
+                    </p>
+                </a>
             </div>
-            <div class="footer2">
-                <div class="footer2-1">
-                    <ul>
-                        <li><a href="#">개인정보처리방침</a></li>
-                        <li><a href="#">저작권보호정책</a></li>
-                        <li><a href="#">이메일무단수집거부</a></li>
-                        <li><a href="#">CCTV설치 및 운영지침</a></li>
-                    </ul>
-                </div>
-                <div class="footer2-2">
-                    COPYRIGHT &copy; 2023, All Rights Reseved
-                </div>
+            <div class="board">
+                <ul class="tabmenu">
+                    <li class="on">
+                        <h2><a href="#">공지사항</a></h2>
+                        <div class="tabcon notice">
+                            <table>
+                                <tr>
+                                    <th><a href="#" class="pp">2023 CES에서 선 보인 스마트홈의 5가지 특징</a></th>
+                                    <td>2023-10-13</td>
+                                </tr>
+                                <tr>
+                                    <th><a href="#" >오피스에 어울리는 바닥재_ 바닥 관리 및 청소 팁까지!</a></th>
+                                    <td>2023-07-12</td>
+                                </tr>
+                                <tr>
+                                    <th><a href="#" >첨단회의실의 첫 걸음, 전자칠판- 삼성플립 사용리뷰</a></th>
+                                    <td>2023-05-20</td>
+                                </tr>
+                                <tr>
+                                    <th><a href="#" >미래의 업무방식을 변화시킬 스마트오피스의 3가지 특징징</a></th>
+                                    <td>2023-02-13</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </li>
+                    <li>
+                        <h2><a href="#">갤러리</a></h2>
+                        <div class="tabcon gall">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <p class="box"><img src="img/g1.jpg" alt="스마트오피스"></p>
+                                        <span>스마트오피스</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p class="box"><img src="img/g2.jpg" alt="스마트빌딩"></p>
+                                        <span>스마트빌딩</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p class="box"><img src="img/g3.jpg" alt="스마트병원"></p>
+                                        <span>스마트병원</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <p class="flogo"><img src="img/flogo.png" alt="기능건설"></p>
+            <div>
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">찾아오시는길</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">고객지원</a></li>
+                    <li><a href="#">제휴문의</a></li>
+                </ul>
+                <p class="copy">
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.<br>
+                    Copyright 2024. leeminiclass All rights reserved.
+                </p>
             </div>
         </footer>
+        <div class="popup">
+            <h2>자연을 오피스로 옮기다!</h2>
+            <img src="img/popup.jpg" alt="자연을 오피스로 옮기다!">
+            <p>Biophilic Office Design을 통해 친환경적인 오피스 설계로 수반하는 것이 무엇이 이점이 되는지 살펴 보겠습니다.</p>
+            <button>Close X</button>
+        </div>
+    </div>
 </body>
 </html>

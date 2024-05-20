@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--원본 JS파일 또는 개발자용 JS파일-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!--사용자용 JS파일-->
+    <!--<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>-->
+    
+    <!--라이브러리를 다운로드하여 사용할 때 : 웹디 실기에서는-->
+    <!--<script src="./jquery-3.7.1.js"></script>-->
+    <!--외부 스크립트 방식-->
+    <!--<script src="240520_1.js"></script>-->
+        <!--내부 스크립트 방식-->
+        <!--<script>
+            $(document.ready(
+                function(){
+                    실행문
+                }
+            ));
+        </script>-->
+</head>
+<body> 
+
+<button>sample</button>
+<div></div>
+<p></p>
+
+<script>
+    $(function(){ //jQuery를 요기 익명의 함수에다가 써먹겠습니다= this = $ = jQuery
+            $('div').text('제이쿼리를 시작해볼까');
+            $('button').click(function(e) {
+                $('p').text('환영합니다!').css('color','blue');
+            });
+        });
+</script>
+</body>
+</html>
