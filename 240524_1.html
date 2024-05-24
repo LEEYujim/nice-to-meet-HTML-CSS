@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../YUJ/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <script>
+        //1.제이쿼리는 선택자 + 명령어 라는 간단한 구조로 이루어져 있다.
+        //2. 선택자: 기능을 할당받는 요소
+        //3. 명령어 : 메소드
+        //4. 메소드: 키워드 + (변수, 함수, 조건문) + 종결; 구조로 이루어져 있다.
+        //5. 제이쿼리는 체인구조로 사용한다.
+        //6. chain 구조 : 여러 메소드를 연결연결하여 사용하는 방식
+
+        //A. 기본 문법
+        //$(선택자-할당대상).method1().method2();
+        //$ = this의 축약 기호이자, Jaquery의 축약어이다. 
+        //this(); 는 함수이며, 어떠한 요소를 호출할 수 있는 시작구문이다.
+        //$(this)'는 여러분들의 반응을 읽는 요소로 사용한다.
+
+        //B. 선택자
+        //B-1. 요소(엘리먼트 = 태그 = HTML) 선택자 
+        $('div');//모든 div를 선택
+        //B-2. 아이디와 클래스 (id, class)선택자
+        $('.inner'),$('#section')//클래스가 inner인 요소 선택, id가 section인 요소 선택
+        //B-3. 속성(attribute) 선택자
+        $('[type="radio"]')//type속성이 radio인 요소를 선택
+        //B.4 후손과 자식 선택자
+        $('nav li'), $('nav>ul>li')// nav에 속한 모든 li를 선택, nav의 1뎁스 ul의 1뎁스 li인 녀석들을 선택
+        //B-5. 아랫형제 선택자
+        $('h1 + p')//h1 다음에 오는 p를 선택//
+        //B-6. 필터 선택자
+        $('li:first-child'), $('textarea:placeholder'), $('[type="radio:checked"]')
+        //C. 구조
+        //6. chain 구조 : 여러 메소드를 연결연결하여 사용하는 방식
+        //여러 기능이 있는 메소드를 연속 호출해서 동시에 여러 작업을 할 수 있도록 해준다.(jquery의 장점)
+        //
+        $('button').click(function(){//button : 리스너이자 선택자 + click : 핸들러이자 메소드
+            .addClass('pop')//처리할 문장
+            .css('background-color',"red")//처리할 문장
+        });
+        $('.slide').find().stop();//체인구조를 갖는다
+        //D. 이벤트
+        //웹 페이지와 함께 상호작용하여 응답하는 기능
+        //사용자의 동작(마우스, 키보드)들과 연관이 있습니다.
+        //.on(), .click(), .mouseenter, mouseleave(), .keyUp()
+        $('button').on('click',function(){
+            alert("오늘을 금요일입니다!");
+        });
+        //E. Then..?
+        //엘리먼트 = HTML요소 = 태그를 비롯한 닉네임과 관계
+        //엘리먼트를 제어할 수 있는 메소드들을 제공한다.
+        
+        //E-1 : 스타일 제어
+        $('p').css('프로퍼티(속성)','값(밸류)')//선택자의 css를 변경
+        //E-2: 클래스 조작
+        .$(div).addClass('.on');//선택한 요소에 css 추가
+        .$(div).removeClass('.on');//선택한 요소에 css 제거
+        //E-3: 내용 변경
+        $('h1').text("변경하고자 하는 내용이 담긴 텍스트")//선택한 요소에 텍스트 변경
+        $('h1').html("변경하고자 하는 내용이 담긴 텍스트")// 선택한 요소에 html 내용 변경
+        $('.bb').text('한 시간 남았습니다.')//.bb라는 클래스를 가진 요소의 저 텍스트 내용으로 변경된다.
+        $('.bb').html('<b><mark>정말 시간이 빠르군요</mark><b>');//bb라는 클래스르 가진 요소의 내용이 태그를 포함해서 저 텍스트 내용으로 변경된다.
+
+        //E-4. 속성 조작
+        //.attr(), .prop() 등 특정 속성 값을 읽어 와서 변경이 가능하다.
+        //.attr('속성명')-선택한 요소의 속성값을 가져온다 / .attr('속성','값')-선택한 요소의 속성값을 다른 값으로 변경한다.
+        //.prop('속성명')-선택한 요소의 특정 속성값을 가져온다 / .prop('속성','값')-선택한 요소의 속성값을 다른 값으로 변경한다.
+        $('img').attr('src',"poppy-jpg")//이미지 태그에 모두 poppy.jpg로 변경한다.
+        $('input[type:"checkbox"]').prop('checked',true); //모든 인풋타입 체크박스를 true로 선정하여 누른다.
+        
+
+
+    </script>
+    
+</body>
+</html>

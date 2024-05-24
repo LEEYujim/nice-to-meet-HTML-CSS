@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            //DOM = HTML 메서드 다뤄보기 vol.2
+            //.append() - 선택된 HTMl요소 제일 끝에 새로운 요소를 추가한다.
+            //.prepend() - 선택된 HTMl요소 제일 앞에 새로운 요소를 삽입한다.
+            //.after() - 선택된 HTMl요소 바로 뒤에 새로운 요소를 추가한다.
+            //.before() - 선택된 HTMl요소 바로 앞에 새로운 요소를 삽입한다.
+            //.remove() - 선택된 HTMl요소를 제거한다.
+        $('#btn').click(function(){
+            $('#box').append("<p style='color:palevioletred'>이제 곧 6시입니다!</p>");
+        });
+        
+        
+        });
+
+    </script>
+</head>
+<body>
+    <div id="box">
+
+    </div>
+    <button id="btn">어펜드로 요소를 추가해보자!</button>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.7.1.js"></script>
+    <script>
+        //DOM = HTML 메서드 다뤄보기
+        //.HTML(), .TEXT(), .VAL()
+        $(document).ready(function() {
+            $('#btn1').click(function(){
+                $('#p1').text("마지막시간입니다!");
+            });
+
+            $('#btn2').click(function(){
+                $('#p2').text("<h1>주말잘보내십시오 : D!</h1>");
+            });
+
+            $('#btn3').click(function(){
+                $('#p3').html("<span style='color:green;'>웹디문제 하나정도 꼭 풀어보시구요</span>");
+            });
+
+            $('#btn4').click(function(){
+                $('#p1').text("마지막시간입니다!");
+            });
+
+            $('#btn5').click(function(){
+                $('#imgs>img').attr('src','./images/240402/lemon-posset.jpg');
+            });
+        
+        });
+    </script>
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p>전화번호는요 : <input type="text" id="number"></p>
+
+    <button id="btn1">텍스트 다루기</button>
+    <button id="btn2">텍스트 다루기2</button>
+    <button id="btn3">HTML 다루기</button>
+    <button id="btn4">입력창 값 다루기</button>
+
+    <p id="imgs">
+        <img src="./images/240402/chocolate-islands.jpg" alt="chocolate-islands">
+    </p>
+    <button id="btn5">이미지를 슈슉</button>
+    
+
+</body>
+</html>
