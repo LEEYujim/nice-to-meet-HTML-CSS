@@ -1,203 +1,177 @@
-*{margin: 0; padding: 0; box-sizing: border-box;}
+@charset "utf-8";
+
+*{padding: 0; margin: 0; box-sizing: border-box;}
 body{color: #333; background-color: #fff;}
 
 li{list-style-type: none;}
 a{text-decoration: none; color: inherit;}
-table{border-collapse: collapse;}
+table{border-collapse: collapse; width: 100%;}
 img{max-width: 100%;}
 button{cursor: pointer;}
 
 .wrap{position: relative;}
 
 /*A*/
-header{
-    background-color: salmon;
-    height: 100px;
-}
-header .inner{
+.inner{
+    width: 1340px; 
+    margin: 0 auto; 
     position: relative;
-    width: 1200px;
-    margin: 0 auto;
-    height: 100px;
-    padding-top: 20px;
 }
-.inner>nav{
+header{height: 100px; background-color: salmon;}
+header>nav{
     position: absolute; 
-    z-index: 10;
+    right: 0; 
     top: 50px;
-    right: 0;
-}
-.inner>nav>ul{display: flex;}
-.inner>nav>ul>li>a{
-    display: block; 
-    width: 150px;
     text-align: center;
-    padding: 10px;
+    z-index: 10;
 }
-.inner>nav>ul>li>a:hover{
-    background-color: blanchedalmond;
-    color: #333;
-}
-header .sub{display: none;}
-header .sub>li>a{
+header>nav>ul{display: flex;}
+header>nav>ul>li>a{
+    width: 180px;
     display: block;
-    background-color: #fff;
-    text-align: center;
-    width: 150px;
-}
-header .sub>li>a:hover{
     background-color: salmon;
-    color: #fff;
+    padding: 10px 20px;
 }
+header>nav>ul>li>a:hover{
+    background-color: blanchedalmond;
+    font-weight: bold;
+}
+.sub{
+    height: 125px;
+    background-color: rgba(0, 0, 0, .5); 
+    color: #fff;
+    display: none;
+}
+.sub a{display: block; padding: 5px;}
+.sub a:hover{ background-color: #333;}
 
 /*B*/
 .slide{
     position: relative;
-    width: 1200px;
-    height: 300px;
-    margin: 0 auto;
-    background-color: antiquewhite;
-    color: #fff;
+    width: 100vw;
+    height: 350px;
     overflow: hidden;
 }
-.slide ul{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.slide ul li{
-    height: 300px;
-    width: 1200px;
-    position: relative;
-}
-.slide ul li a{
+.slide a{display: block;}
+.slide .s1{
     display: block;
-    height: 100%;
+    background: url('../img/s1.jpg') no-repeat center/cover;
+    height: 350px;
 }
-.slide ul li.s1{background: url('../imgs/s1.jpg') no-repeat center/cover;}
-.slide ul li.s2{background: url('../imgs/s2.jpg') no-repeat center/cover;}
-.slide ul li.s3{background: url('../imgs/s3.jpg') no-repeat center/cover;}
-
-/*C*/
-.contents{
-   width: 1200px;
-   height: 200px;
-   margin: 0 auto; 
-   position: relative;
-   display: flex;
+.slide .s2{
+    background: url('../img/s2.jpg') no-repeat center/cover;
+    height: 350px;
 }
-.info h2,.gall h2{
-    background-color: blanchedalmond; 
-    width: 100px; 
-    margin-left: 10px;
+.slide .s3{
+    background: url('../img/s3.jpg') no-repeat center/cover;
+    height: 350px;
+}
+.slide .text{
+    position: absolute;
+    color: #fff;
     text-align: center;
 }
-.info{
+.slide .menu_icons{
+    display: flex;
     position: absolute;
-    text-align: left;
-    padding: 20px;
-    left: 0;
-    top: 0;
+    gap: 100px;
+    background-color: salmon;
+    height: 80px;
+    width: 1340px;
+    bottom: 0;
+    left: 11%;
 }
-.info table{
-    background-color: blanchedalmond; 
-    padding: 20px;
+.slide .menu_icons img{
+    width: 50px;
+    height: 50px;
 }
-.info table th,td{
-    border-bottom: 1px solid #333;
-    padding: 5px;
+.slide .menu_icons a{display: block;}
+.slide .menu_icons li{
+    display: flex;
+    padding-top: 10px;
+    color: #fff;
+    padding-left: 50px;
 }
 
-.gall{
-    position: absolute;
-    left: 35%;
-    padding: 20px;
+/*C*/
+.content{
+    width: 1340px;
+    margin: 0 auto;
+    position: relative;
 }
-.gall ul{
-    display: flex; 
-    background-color: blanchedalmond;
+
+.banner{margin-top: 30px; height: 200px;}
+.banner ul{display: flex;}
+.banner ul li a{display: block; padding: 10px;}
+.banner ul li:nth-child(3){
+    position: absolute;
+    right: 0;
+}
+.banner img{width: 100px; height: 100px;}
+
+.con{position: relative; height: 300px;}
+.tabmenu{display: flex;}
+.tabmenu li{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+.tabmenu li>h2>a{
+    color: #fff;
     padding: 10px;
 }
-.gall ul img{
-    width: 100px; 
-    height: 100px;
-    margin-right: 10px;
-}
-.gall ul img:hover{opacity: .7; border-radius: 10px;}
-
-.banner{
-    position: absolute; 
-    right: 0; 
-    top: 0; 
-    padding: 20px;
+.tabmenu li.on{
     background-color: salmon;
     color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px;
 }
-
-footer{
+.tabmenu .off{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    height: 200px;
     background-color: #333;
     color: #fff;
 }
-footer .inner{
-    width: 1200px;
-    height: 100px;
+
+.off ul{display: flex;}
+.off img{width: 130px; height: 130px;}
+
+
+
+/*D*/
+footer{
+    position: relative; 
+    height: 120px; 
     display: flex;
-    margin: 0 auto;
-    position: relative;
-    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding-top: 30px;
 }
-footer .fcopy{
-    position: absolute;
-    left: 20%;
+.under ul{display: flex;}
+.under ul li a{
+    display: block; 
+    text-decoration: underline;
+    border-right: 1px solid #fff;
+    margin-right: 30px;
+    padding-right: 20px;
 }
-footer .inner .sns{
-    display: flex;
-    position: absolute;
-    right: 30px;
-    gap: 20px;
-}
-footer .inner .sns li:first-of-type{
-    background-color: blue;
-    width: 30px;
-    height: 30px;
-    padding-left: 10px;
-    padding-top: 5px;
-    border-radius: 100%;
-}
-footer .inner .sns li:nth-child(2){
-    background-color: green;
-    width: 30px;
-    height: 30px;
-    padding-left: 10px;
-    padding-top: 5px;
-    border-radius: 100%;
-}
-footer .inner .sns li:last-child{
-    background-color: red;
-    width: 30px;
-    height: 30px;
-    padding-left: 8px;
-    padding-top: 5px;
-    border-radius: 100%;
-}
+
 /*popup*/
 .popup{
-    background-color: crimson;
-    color: #fff;
-    padding: 20px;
     position: absolute;
-    top: 5%;
-    left: 40%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 100px;
+    left: 35%;
+    top: 15%;
+    border-radius: 20px;
     z-index: 100;
-    border-radius: 10px;
     text-align: center;
     display: none;
 }
-.popup .btn{
+button{
     position: absolute;
-    right: 20px;
+    right: 10px;
     bottom: 10px;
+
 }
