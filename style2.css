@@ -1,189 +1,95 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background-color: white;
-    color: #333;
-}
-li{list-style-type: none;}
-a{text-decoration: none;}
+@charset "utf-8";
 
+/*초기화*/
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+/*공통*/
+a{text-decoration: none;}
+li{list-style-type: none;}
 img{max-width: 100%;}
+body{background-color: #fff; color: #333;}
 table{width: 100%; border-collapse: collapse;}
 button{cursor: pointer;}
 
-/*A,B,C,D*/
-.wrap{
-    position: relative;
-}
-.inner{
-    width: 1200px;
-    margin: 0 auto;
-}
+/*전체영역*/
+.wrap{width: 100%;}
 
-/*A-------------------------*/
-header{
-    height: 100px;
-    position: relative;
-    padding-top: 20px;
-}
-nav{
-    position: absolute;
-    z-index: 10;
-    right: 0;
-    top: 60px;
-}
-nav > ul{display: flex;}
-nav > ul > li > a{/*1 depth menu design*/
+/*A, C, B 묶음*/
+.top{height: 800px; min-width: 1200px; display: flex;}
+
+/*A*/
+header{width: 200px; background-color: dimgray; padding: 30px 10px;}
+header h1{text-align: center; margin-bottom: 30px;}
+header nav>ul>li{position: relative;}/*A-메인메뉴*/
+header nav>ul>li>a{
     display: block;
-    padding: 10px;
-    width: 120px;
-    background-color: darkcyan;
-    color: white;
-    text-align: center;
+    padding: 20px;
+    background-color: brown;
+    color: #fff;
     font-weight: bold;
 }
-nav > ul > li > a:hover{
-    background-color: lightblue;
-    color: #333;
-}
-.sub{
-    display: none;
-}
-.sub li a{   /*2 depth menu design*/
-    display: none;
-    padding: 10px;
-    color: white;
-    text-align: center;
-    font-size: 14px;
-}
-.sub li a:hover{
-    background-color: lightblue;
-}
-.menuBg{
-    width: 100%;
-    height: 120px;
-    background-color: rgba(0,0,0,.5);
-    position: absolute;
-    top: 100px;
-    left: 0;
-    z-index: 9;
-    display: none;
-}
-
-/*B------------------------*/
-.slide{
-    height: 300px;
-    background-color: antiquewhite;
-    position: relative;
-}
-.slide ul{}
-.slide ul li{
-    width: 1200px; 
-    height: 300px; 
+header nav>ul>li>a:hover{background-color:black; color: #fff;}
+header nav .sub{/*A-서브메뉴*/
     position: absolute;
     top: 0;
-    left: 0;
+    width: 100%;
+    right: -180px;
+    z-index: 10;
     display: none;
 }
-.slide ul li.s1{
-    background: url('../img/s1.jpg') no-repeat center/cover;
+header nav .sub li a{
     display: block;
+    padding: 20px;
+    background-color:lightcoral;
+    color: #fff;
 }
-.slide ul li.s2{
-    background: url('../img/s2.jpg') no-repeat center/cover;
+header nav .sub li>a:hover{background-color:dimgray; color: #000;}
+header .spot{
+    margin-top: 20px;
+    text-align: center;
+    font-size:14px;
 }
-.slide ul li.s3{
-    background: url('../img/s3.jpg') no-repeat center/cover;
-}
-.slide ul li a{
-    display: block;
-    height: 100%;
-}
-.slide ul li h2{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    font-weight: bold;
-}
+header .spot a, header .spot span{color: #fff;} 
+header .spot a:first-of-type{padding-right: 10px;}
+header .spot a:last-of-type{padding-left: 10px;}
 
-/*C------------------------------*/
-.con{height: 200px; display: flex;}/*콘텐츠영역 맥락*/
-.con article{width: 400px;}
-.con h2{width: 200px; text-align: center; color: black; font-size: 20px;}
+/*C*/
+.con{width: 400px; background-color: darkred;}
+/* 
+.con article{background-color: #fff;}
+.con article h2{color: darkred;}
+*/
+.banner{background-color: darkred;}
+.banner a{display: flex; padding: 30px 10px; align-items: center;}
+.banner .photo{flex-basis: 100px; margin-right: 10px;}
+.banner .text{flex-grow: 2;}
+.banner .text h2,.banner .text p{color: #fff;}
+.banner .arrow{margin-left: 10px;}
+.notice, .gall{margin-top: 30px;}
+.notice h2, .gall h2{color: #fff; padding: 10px; background-color: black; width: 150px;}
+.notice table{margin-top: 20px;}
+.notice table tr{border-bottom: 1px solid #fff;}
+.notice table th{text-align: left;}
+.notice table th a{color:#fff; padding: 10px;}
+.notice table td{color:#fff;}
+.gall ul{display: flex; justify-content: space-around; margin-top: 20px;}
+.gall ul li{flex-basis: 40%;}
+.gall ul li:hover{opacity: .5;}
+.gall ul li p{color: #fff; text-align: center; margin-top: 10px;}
 
-/*공지사항 맥락*/
-.con1{background-color: rgb(0, 105, 105);}
-.con1 h2{color: white; text-align: center;}
-.con1 div{background-color: rgb(0, 105, 105); padding: 10px; height: 150px;}
-.con1 table{color: white;}
-.con1 table th{text-align: left;}
-.con1 table tr{border-bottom: 1px dashed #fff;}
-.con1 table th a{
-    width: 200px;
-    color: white;
-    text-overflow: ellipsis;
-    white-space: nowrap;/*공백:줄바꿈 처리하지 않는다.*/
-    overflow: hidden;
-    display: block;
-    padding: 5px;
-}
+/*B*/
+.slide{width: calc(100% - 600px); background-color: darksalmon;}
+.slide ul{}
+.slide ul li{}
+.slide ul li a{}
+.slide ul li.s1{background-image: url(../images/s1.jpg);}
+.slide ul li.s2{background-image: url(../images/s2.jpg);}
+.slide ul li.s3{background-image: url(../images/s3.jpg);}
 
-.con2{background-color: darkcyan;}
-.con2 h2{color: white; text-align: center;}
-.con2 div{height: 150px;}
-.con2 div ul{display: flex; justify-content: space-around;}
-.con2 div ul li img{width: 120px; height: 120px;}
-.con2 div ul li:hover{opacity: .7;}
 
-.con3{background-color: darkgrey;}
-.con3 h2{color: white; text-align: center;}
-.con3 ul{display: flex; justify-content: center; gap: 30px;}
-.con3 ul li{text-align: center;}
-.con3 ul li a{display: block;}
-.con3 ul li p{
-    padding-top: 30px; 
-    width: 100px;  
-    height: 100px;
-    background-color: darkcyan;
-}
-.con3 ul li p:hover{
-    border-radius: 20px;
-    background-color: darkblue;
-}
+/*D*/
+footer{height: 100px; background-color: dimgray;}
 
-/*D----------------------------*/
 
-footer{
-    height: 100px;
-    background-color: rgb(0, 25, 70);
-    position: relative;
-}
-footer .fmenu{display: flex; gap:30px;}
-footer .fmenu li{border-right: 1px solid white; padding-right: 20px;}
-footer .fmenu li a{color: #fff;}
-footer .fmenu li:last-of-type{border-right: 0;}
-footer .fcopy{font-size: 14px; color: aliceblue;}
-
-footer select{position: absolute; right: 0; top: 30;}
-
-/*POPUP------------------------*/
-
-.popup{
-    position: absolute; 
-    top: 50%; 
-    left: 50%;
-    z-index: 100; 
-    width: 400px;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    transform: translate(-50%,-50%);
-    display: none;
-}
-.popup h2{margin-bottom: 20px; text-align: center;}
-.popup .img{padding-left: 50px;}
-.popup .text{text-align: center;}
-.popup .button{text-align: right;}
-
+/*popup*/
+.popup{}
