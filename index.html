@@ -3,166 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>철길마을</title>
+    <title>오픈뱅킹</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/jquery-1.12.3.js"></script>
     <script src="./js/script.js"></script>
 </head>
 <body>
-    <div class="wrap"><!--전체-->
-        <div class="top"><!--A,C,B-->
-            <header><!--A-->
-                <h1><a href="#"><img src="./img/logo.png" alt="logo"></a></h1>
+    <div class="wrap">
+        <header>
+            <div class="inner">
+                <a href="#"><img src="./img/logo.png" alt="logo"></a>
                 <nav>
                     <ul>
-                        <li><a href="#">철길 마을</a>
+                        <li><a href="#">조회</a>
                             <ul class="sub">
-                                <li><a href="#">마을 소개</a></li>
-                                <li><a href="#">마을의 유래</a></li>
-                                <li><a href="#">볼거리</a></li>
-                                <li><a href="#">찾아오시는 길</a></li>
+                                <li><a href="#">계좌조회</a></li>
+                                <li><a href="#">거래내역조회</a></li>
+                                <li><a href="#">휴먼계좌조회</a></li>
+                                <li><a href="#">수표/어음 조회</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">주변 맛집</a>
+                        <li><a href="#">이체</a>
                             <ul class="sub">
-                                <li><a href="#">빵집</a></li>
-                                <li><a href="#">간장게장</a></li>
-                                <li><a href="#">중국음식점</a></li>
-                                <li><a href="#">횟집</a></li>
+                                <li><a href="#">계좌이체</a></li>
+                                <li><a href="#">다계좌이체</a></li>
+                                <li><a href="#">자동이체</a></li>
+                                <li><a href="#">예약이체</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">주변 여행지</a>
+                        <li><a href="#">공과금</a>
                             <ul class="sub">
-                                <li><a href="#">은파호수공원</a></li>
-                                <li><a href="#">초원사진관</a></li>
-                                <li><a href="#">월명공원</a></li>
-                                <li><a href="#">진포해양공원</a></li>
+                                <li><a href="#">지로/생활요금</a></li>
+                                <li><a href="#">지방세</a></li>
+                                <li><a href="#">국세/관세</a></li>
+                                <li><a href="#">벌칙금/벌과금</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">도움마당</a>
+                        <li><a href="#">외환</a>
                             <ul class="sub">
-                                <li><a href="#">교통정보</a></li>
-                                <li><a href="#">주변 주차장</a></li>
-                                <li><a href="#">자료실</a></li>
-                                <li><a href="#">자료마당</a></li>
+                                <li><a href="#">금리</a></li>
+                                <li><a href="#">환율/외화예금</a></li>
+                                <li><a href="#">글로벌뱅킹</a></li>
+                                <li><a href="#">외화송금</a></li>
                             </ul>
                         </li>
                     </ul>
                 </nav>
-            </header>
-            <div class="con">
-                <article class="banner">
-                    <ul>
-                        <li><a href="#"><img src="./img/banner.jpg" alt="banner"></a></li>
-                        <li><a href="#">
-                            <h3>철길 마을의 역사</h3>
-                            <p>2032-02-13</p>
-                            <p>여러분들이 궁금해하는 철길마을의 역사에 대해 알아봅니다.</p></a></li>
-                        <li><a href="#"><img src="./img/arrow.png" alt="arrow"></a></li>
-                    </ul>
-                </article>
-                <article class="notice">
-                    <h2>공지사항</h2>
-                    <table>
-                        <tr>
-                            <th><a href="#" class="pp">철길마을에 오신 여러분들 환영합니다. </a></th>
-                            <td><a href="#">2032-07-12</a></td>
-                        </tr>
-                        <tr>
-                            <th><a href="#">철길마을 체험활동 5가지</a></th>
-                            <td><a href="#">2032-04-29</a></td>
-                        </tr>
-                        <tr>
-                            <th><a href="#">어린이 기차그리기 대회 수...</a></th>
-                            <td><a href="#">2032-03-12</a></td>
-                        </tr>
-                        <tr>
-                            <th><a href="#">설연휴 휴관일 안내</a></th>
-                            <td><a href="#">2032-01-29</a></td>
-                        </tr>
-                    </table>
-                </article>
-                <article class="gall">
-                    <h2>갤러리</h2>
-                    <ul>
-                        <li><a href="#"><img src="./img/g1.jpg" alt="gallery1"><p>4월 철길벚꽃축제</p></a></li>
-                        <li><a href="#"><img src="./img/g2.jpg" alt="gallery2"><p>철길마을 사진전</p></a></li>
-                    </ul>
-                </article>
-                <article class="go">
-                    <ul>
-                        <li><a href="#"><img src="./img/icon01.png" alt="icon01"><p>link1</p></a></li>
-                        <li><a href="#"><img src="./img/icon02.png" alt="icon02"><p>link2</p></a></li>
-                        <li><a href="#"><img src="./img/icon03.png" alt="icon03"><p>link3</p></a></li>
-                        <li><a href="#"><img src="./img/icon04.png" alt="icon04"><p>link4</p></a></li>
-                    </ul>
-                </article>
             </div>
-            <div class="slide">
+            <div class="menubg"></div>
+        </header>
+        <div class="slide">
+            <a href="#">
                 <ul>
-                    <li><a href="#">
+                    <li>
                         <div class="s1">
                             <div class="textbox">
-                                <h2>철길마을의 역사!</h2>
-                                <p>철길마을의 역사가 시작됩니다.</p>
+                                <h2>로비프로젝트 &lt;어쩌다가 _하지훈>전</h2>
+                                <p>전시기간 2019-06-07~2019-09-29</p>
+                                <p>전시부문 로비프로젝트</p>
                             </div>
                         </div>
-                    </a></li>
-                    <li><a href="#">
+                    </li>
+                    <li>
                         <div class="s2">
                             <div class="textbox">
-                                <h2>근대 철길 역사 박물관 본관 재개관 안내</h2>
+                                <h2>Thing+Think_한젬마의 관계요리</h2>
+                                <p>전시기간 2019-04-05~2019-08-25</p>
+                                <p>전시부문 어린이미술관기획전</p>
                             </div>
                         </div>
-                    </a></li>
-                    <li><a href="#">
+                    </li>
+                    <li>
                         <div class="s3">
                             <div class="textbox">
-                                <h2>철길마을! 청년 서포터즈 모집!</h2>
+                                <h2>이우환공간 SPACE LEEUFAN</h2>
+                                <p>전시기간 2019-08-05~2019-12-30</p>
+                                <p>전시부문 이우환공간</p>
                             </div>
                         </div>
-                    </a></li>
+                    </li>
+                </ul>
+            </a>
+        </div>
+        <div class="con">
+            <div class="link">
+                <ul>
+                    <li><a href="#"><img src="./img/account_balance.png" alt="account_balance">link1</a></li>
+                    <li><a href="#"><img src="./img/attach_money.png" alt="attach_money">link2</a></li>
+                    <li><a href="#"><img src="./img/fact_check.png" alt="fact_check">link3</a></li>
+                    <li><a href="#"><img src="./img/privacy_tip.png" alt="privacy_tip">link4</a></li>
+                    <li><a href="#"><img src="./img/touch_app.png" alt="touch_app">link5</a></li>
                 </ul>
             </div>
-        </div>
-        <footer>
-            <div class="flogo">
-                <h1><a href="#"><img src="./img/flogo.png" alt="flogo"></a></h1>
+            <div class="banner">
+                <ul>
+                    <li><a href="#"><img src="./img/banner.jpg" alt="banner"></a></li>
+                    <li>
+                        <a href="#"><h3>관람시간안내</h3>
+                            <p>화요일~목요일, 일요일: 10:00 ~ 18:00
+                                금요일, 토요일: 10:00 ~ 21:00
+                                (※관람마감 1시간 전 입장마감)
+                                휴관일 : 월요일</p>
+                        </a></li>
+                    <li class="arrow"><a href="#"><img src="./img/arrow.png" alt="arrow"></a></li>
+                </ul>
             </div>
-            <div class="fmain">
-                <div class="fmenu">
-                    <ul>
-                        <li><a href="#">footermenu1</a></li>
-                        <li><a href="#">footermenu2</a></li>
-                        <li><a href="#">footermenu3</a></li>
-                        <li><a href="#">footermenu4</a></li>
-                        <li><a href="#">footermenu5</a></li>
-                        <li><a href="#">footermenu6</a></li>
-                    </ul>
-                </div>
-                <div class="fcopy">
-                    <p><small>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                        Copyright 2024. leeminiclass All rights reserved.</small></p>
-                </div>
+            <div class="tab">
+                <ul>
+                    <li class="noticebox">
+                        <h2><a href="#">공지사항</a></h2>
+                        <div class="tabcon">
+                            <table>
+                                <tr>
+                                    <th><a href="#" class="pp">세계의미술작품 8월 전시 안내</a></th>
+                                    <td>2019-08-02</td>
+                                </tr>
+                                <tr>
+                                    <th><a href="#">세계의미술작품(이우환공간) 무료 개방 안내</a></th>
+                                    <td>2019-07-26</td>
+                                </tr>
+                                <tr>
+                                    <th><a href="#">여름방학 무료 영화상영회 'BMA 시네마' 운영...</a></th>
+                                    <td>2019-07-25</td>
+                                </tr>
+                                <tr>
+                                    <th><a href="#">7월20일(토) 도슨트 미운영 알림</a></th>
+                                    <td>2019-07-20</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </li>
+                    <li class="gallbox">
+                        <h2><a href="#">갤러리</a></h2>
+                        <div class="tabcon">
+                            <ul>
+                                <li><a href="#"><img src="./img/g1.jpg" alt="gallery1"><p>lorem</p></a></li>
+                                <li><a href="#"><img src="./img/g2.jpg" alt="gallery2"><p>lorem</p></a></li>
+                                <li><a href="#"><img src="./img/g3.jpg" alt="gallery3"><p>lorem</p></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="familysite">
+            <footer>
+                <div class="flogo">
+                    <a href="#"><img src="./img/flogo.png" alt="flogo"></a>
+                </div>
+                <div class="ftext">
+                    <div class="fmenu">
+                        <ul>
+                            <li><a href="#">FOOTERMENU1</a></li>
+                            <li><a href="#">FOOTERMENU2</a></li>
+                            <li><a href="#">FOOTERMENU3</a></li>
+                            <li><a href="#">FOOTERMENU4</a></li>
+                            <li><a href="#">FOOTERMENU5</a></li>
+                            <li><a href="#">FOOTERMENU6</a></li>
+                        </ul>
+                    </div>
+                    <div class="fcopy">
+                        <p>It is a long established fact that a reader will be distracted by the readable content .<br>
+                            Copyright 2023. leeminiclass All rights reserved.</p>
+                    </div>
+                </div>
                 <select name="sitemap" id="site">
-                    <option value="서울역사박물관">서울역사박물관</option>
-                    <option value="제주역사박물관">제주역사박물관</option>
-                    <option value="부산역사박물관">부산역사박물관</option>
-                    <option value="수원역사박물관">수원역사박물관</option>
-                    <option value="오산역사박물관">오산역사박물관</option>
-                    <option value="영덕역사박물관">영덕역사박물관</option>
+                    <option value="난난난">난난난</option>
+                    <option value="할할할">할할할</option>
+                    <option value="수수수">수수수</option>
+                    <option value="있있있">있있있</option>
+                    <option value="다다다">다다다</option>
+                    <option value="!!!">!!!</option>
                 </select>
+            </footer>
+            <div class="popup">
+                <h2>문자서비스신청하기</h2>
+                <img src="./img/popup.jpg" alt="popup">
+                <p>관심있는 전시 알람을 받으세요!</p>
+                <button>X닫기</button>
             </div>
-        </footer>
-        <div class="popup">
-            <h2>2032년 철길마을 OPEN!  </h2>
-            <img src="./img/popup.jpg" alt="popup">
-            <p>2032년 철길마을 전면개관을 알립니다.</p>
-            <button>X닫기</button>
         </div>
     </div>
-    
 </body>
 </html>

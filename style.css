@@ -10,168 +10,180 @@ img{max-width: 100%;}
 button{cursor: pointer;}
 
 .wrap{position: relative;}
-
 /*A*/
 .inner{
-    width: 1340px; 
-    margin: 0 auto; 
     position: relative;
-}
-header{height: 100px; background-color: salmon;}
-header>nav{
-    position: absolute; 
-    right: 0; 
-    top: 50px;
-    text-align: center;
-    z-index: 10;
-}
-header>nav>ul{display: flex;}
-header>nav>ul>li>a{
-    width: 180px;
-    display: block;
+    width: 1340px;
+    height: 100px;
     background-color: salmon;
-    padding: 10px 20px;
+    margin: 0 auto;
 }
-header>nav>ul>li>a:hover{
+nav>ul{
+    display: flex; 
+    position: absolute;
+    top: 60px;
+    right: 0;
+    text-align: center;
+}
+nav>ul>li>a{
+    display: block;
     background-color: blanchedalmond;
-    font-weight: bold;
+    width: 180px;
+    padding: 10px;
 }
+nav>ul>li>a:hover{background-color: darkred; color: #fff; font-weight: bold;}
 .sub{
+    position: absolute;
+    z-index: 30;
+    display: none;
+    text-align: center;
+    width: 180px;
+}
+.sub a{
+    display: block;
+    background-color: blanchedalmond;
+    padding: 5px;
+}
+.sub a:hover{background-color: #fff; color: salmon;}
+
+/*menubg*/
+.menubg{
+    width: 100%;
     height: 125px;
-    background-color: rgba(0, 0, 0, .5); 
-    color: #fff;
+    background-color: blanchedalmond;
+    position: absolute;
+    z-index: 10;
     display: none;
 }
-.sub a{display: block; padding: 5px;}
-.sub a:hover{ background-color: #333;}
 
 /*B*/
 .slide{
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 350px;
+    background-color: #333;
+    position: relative;
     overflow: hidden;
 }
-.slide a{display: block;}
+.slide ul{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 .slide .s1{
-    display: block;
     background: url('../img/s1.jpg') no-repeat center/cover;
+    width: 100vw;
     height: 350px;
 }
 .slide .s2{
     background: url('../img/s2.jpg') no-repeat center/cover;
+    width: 100vw;
     height: 350px;
 }
 .slide .s3{
     background: url('../img/s3.jpg') no-repeat center/cover;
+    width: 100vw;
     height: 350px;
 }
-.slide .text{
-    position: absolute;
+.textbox{
+    background-color: rgba(0, 0, 0, .5);
     color: #fff;
-    text-align: center;
-}
-.slide .menu_icons{
-    display: flex;
-    position: absolute;
-    gap: 100px;
-    background-color: salmon;
-    height: 80px;
-    width: 1340px;
-    bottom: 0;
-    left: 11%;
-}
-.slide .menu_icons img{
-    width: 50px;
-    height: 50px;
-}
-.slide .menu_icons a{display: block;}
-.slide .menu_icons li{
-    display: flex;
-    padding-top: 10px;
-    color: #fff;
-    padding-left: 50px;
+    padding: 30px;
 }
 
 /*C*/
-.content{
+.con{
     width: 1340px;
     margin: 0 auto;
-    position: relative;
-}
-
-.banner{margin-top: 30px; height: 200px;}
-.banner ul{display: flex;}
-.banner ul li a{display: block; padding: 10px;}
-.banner ul li:nth-child(3){
     position: absolute;
-    right: 0;
+    top: 82%;
+    left: 190px;
+    z-index: 50;
 }
-.banner img{width: 100px; height: 100px;}
-
-.con{position: relative; height: 300px;}
-.tabmenu{display: flex;}
-.tabmenu li{
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-}
-.tabmenu li>h2>a{
-    color: #fff;
-    padding: 10px;
-}
-.tabmenu li.on{
+.con .link{
+    position: relative;
     background-color: salmon;
-    color: #fff;
+    padding-left: 300px;
+    padding-top: 10px;
+    height: 80px;
 }
-.tabmenu .off{
+.con .link ul{display: flex;}
+.con .link ul a{padding-right: 100px;}
+.con .link ul a img{
+    width: 50px;
+    height: 50px;
+    padding-right: 10px;
+}
+
+.banner{
+    position: relative;
+    height: 150px;
+    background-color: blanchedalmond;
+    padding: 20px;
+}
+.banner ul{display: flex;}
+.banner ul img{width: 80px;}
+
+.tab{
+    position: relative; 
+    margin-top: 30px;
+}
+.tab ul{display: flex;}
+.noticebox{
     position: absolute;
     left: 0;
+    width: 400px;
+}
+.noticebox h2{
+    background-color: salmon;
     padding: 10px;
-    height: 200px;
-    background-color: #333;
-    color: #fff;
+    width: 150px;
+}
+.tabcon{
+    background-color: salmon;
+    height: 130px;
+    width: 500px;
 }
 
-.off ul{display: flex;}
-.off img{width: 130px; height: 130px;}
-
-
-
-/*D*/
-footer{
-    position: relative; 
-    height: 120px; 
+.gallbox{
+    position: absolute;
+    left: 0;
+}
+.gallbox h2{margin-left: 200px;}
+.gallbox ul{
     display: flex;
+}
+.gallbox ul img{width: 100px; height: 100px;}
+
+/*footer*/
+footer{
+    position: relative;
     background-color: #333;
     color: #fff;
+    display: flex;
+    height: 120px;
     padding-top: 30px;
+    margin-top: 200px;
 }
-.under ul{display: flex;}
-.under ul li a{
-    display: block; 
-    text-decoration: underline;
-    border-right: 1px solid #fff;
-    margin-right: 30px;
-    padding-right: 20px;
-}
+.ftext{display: flex; position: relative;}
+.fmenu ul{display: flex;}
+.fmenu ul a{padding: 10px; text-decoration: underline; border-right: 1px solid #fff;}
+.fcopy{position: absolute; left: 0; top: 30px;}
 
 /*popup*/
 .popup{
     position: absolute;
     background-color: #333;
     color: #fff;
-    padding: 20px 100px;
-    left: 35%;
-    top: 15%;
-    border-radius: 20px;
-    z-index: 100;
+    padding: 50px;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    transform: translate(-50%,-50%);
     text-align: center;
     display: none;
 }
-button{
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-
-}
+button{position: absolute; right: 10px; bottom: 10px;}
+#site{height: 30px}
