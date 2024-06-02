@@ -5,185 +5,62 @@ body{color: #333; background-color: #fff;}
 
 li{list-style-type: none;}
 a{text-decoration: none; color: inherit;}
-table{border-collapse: collapse; width: 100%;}
 img{max-width: 100%;}
+table{border-collapse: collapse; width: 100%;}
 button{cursor: pointer;}
 
 .wrap{position: relative;}
-/*A*/
-.inner{
-    position: relative;
-    width: 1340px;
-    height: 100px;
-    background-color: salmon;
-    margin: 0 auto;
-}
-nav>ul{
-    display: flex; 
-    position: absolute;
-    top: 60px;
-    right: 0;
-    text-align: center;
-}
+
+header{position: relative;}
+
+.inner{width: 1340px; margin: 0 auto; height: 100px; background-color: yellowgreen; position: relative;}
+
+header nav{position: absolute; right: 0; top: 60px; z-index: 10; text-align: center;}
+nav>ul{display: flex;}
+nav>ul>li{}
 nav>ul>li>a{
     display: block;
-    background-color: blanchedalmond;
-    width: 180px;
+    background-color: wheat;
+    font-weight: bold;
     padding: 10px;
 }
-nav>ul>li>a:hover{background-color: darkred; color: #fff; font-weight: bold;}
-.sub{
-    position: absolute;
-    z-index: 30;
-    display: none;
-    text-align: center;
-    width: 180px;
-}
-.sub a{
+nav>ul>li>a:hover{background-color: thistle;}
+.sub{}
+.sub li{}
+.sub li a{
     display: block;
-    background-color: blanchedalmond;
-    padding: 5px;
-}
-.sub a:hover{background-color: #fff; color: salmon;}
-
-/*menubg*/
-.menubg{
-    width: 100%;
-    height: 125px;
-    background-color: blanchedalmond;
-    position: absolute;
-    z-index: 10;
-    display: none;
-}
-
-/*B*/
-.slide{
-    position: relative;
-    width: 100%;
-    height: 350px;
-    background-color: #333;
-    position: relative;
-    overflow: hidden;
-}
-.slide ul{
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-.slide .s1{
-    background: url('../img/s1.jpg') no-repeat center/cover;
-    width: 100vw;
-    height: 350px;
-}
-.slide .s2{
-    background: url('../img/s2.jpg') no-repeat center/cover;
-    width: 100vw;
-    height: 350px;
-}
-.slide .s3{
-    background: url('../img/s3.jpg') no-repeat center/cover;
-    width: 100vw;
-    height: 350px;
-}
-.textbox{
-    background-color: rgba(0, 0, 0, .5);
-    color: #fff;
-    padding: 30px;
-}
-
-/*C*/
-.con{
-    width: 1340px;
-    margin: 0 auto;
-    position: absolute;
-    top: 82%;
-    left: 190px;
-    z-index: 50;
-}
-.con .link{
-    position: relative;
-    background-color: salmon;
-    padding-left: 300px;
-    padding-top: 10px;
-    height: 80px;
-}
-.con .link ul{display: flex;}
-.con .link ul a{padding-right: 100px;}
-.con .link ul a img{
-    width: 50px;
-    height: 50px;
-    padding-right: 10px;
-}
-
-.banner{
-    position: relative;
-    height: 150px;
-    background-color: blanchedalmond;
-    padding: 20px;
-}
-.banner ul{display: flex;}
-.banner ul img{width: 80px;}
-
-.tab{
-    position: relative; 
-    margin-top: 30px;
-}
-.tab ul{display: flex;}
-.noticebox{
-    position: absolute;
-    left: 0;
-    width: 400px;
-}
-.noticebox h2{
-    background-color: salmon;
+    color: rgb(104, 175, 116);
+    font-weight: bold;
     padding: 10px;
-    width: 150px;
 }
-.tabcon{
-    background-color: salmon;
-    height: 130px;
-    width: 500px;
+.sub li a:hover{
+    color: rgb(255, 255, 255);
 }
+.menubg{position: absolute; top: 100px; left: 0; width: 100%; height: 200px; background-color: rgba(0, 0, 0, .7); z-index: 9;}
 
-.gallbox{
-    position: absolute;
-    left: 0;
-}
-.gallbox h2{margin-left: 200px;}
-.gallbox ul{
-    display: flex;
-}
-.gallbox ul img{width: 100px; height: 100px;}
+.slide{width: 100%; height: 350px; background-color: violet; overflow: hidden; position: relative;}
+.slide ul{position: absolute; top: 0; left: 0; width: 300%; height: 100%; display: flex;}
+.slide ul li{width: 100%; height: 100%;}
+.s1{background: url('../img/s1.jpg') no-repeat center/cover;}
+.s2{background: url('../img/s2.jpg') no-repeat center/cover;}
+.s3{background: url('../img/s3.jpg') no-repeat center/cover;}
 
-/*footer*/
-footer{
-    position: relative;
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    height: 120px;
-    padding-top: 30px;
-    margin-top: 200px;
-}
-.ftext{display: flex; position: relative;}
-.fmenu ul{display: flex;}
-.fmenu ul a{padding: 10px; text-decoration: underline; border-right: 1px solid #fff;}
-.fcopy{position: absolute; left: 0; top: 30px;}
 
-/*popup*/
-.popup{
-    position: absolute;
-    background-color: #333;
-    color: #fff;
-    padding: 50px;
-    top: 50%;
-    left: 50%;
-    z-index: 1000;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    display: none;
-}
-button{position: absolute; right: 10px; bottom: 10px;}
-#site{height: 30px}
+.con{width: 1340px; height: 100%; margin: 0 auto; position: relative;}
+
+.con .go{width: 100%; height: 100px; background-color: yellow; position: absolute; left: 0; top: -100px;}
+
+.con .banner{width: 100%; height: 200px; background-color: turquoise;}
+
+.con .tab{width: 100%; height: 400px; background-color: tomato;}
+.btn{display: flex;}
+.tab .btn1{background-color: antiquewhite;}
+
+.content{height: 300px; width: 600px; position: relative;}
+.table{background-color: antiquewhite; width: 100%; height: 100%;}
+.tab .btn2{background-color: rgb(255, 145, 0);}
+.gall{background-color: rgb(255, 145, 0); width: 100%; height: 100%; position: absolute; left: 0; top: 0; display: none;}
+
+footer{width: 1340px; height: 100px; background-color: teal; margin: 0 auto;}
+
+/*30분진행-7시 25분 시작*/

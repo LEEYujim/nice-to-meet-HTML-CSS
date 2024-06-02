@@ -3,161 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>영상박물관</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./script/jquery-3.7.1.js"></script>
+    <script src="./script/jquery-1.12.3.js"></script>
     <script src="./script/script.js"></script>
 </head>
 <body>
     <div class="wrap">
-            <div class="top">
-                <header>
-                    <h1><a href="#">
-                        <img src="./images/header_logo.png" alt="header_logo">
-                    </a></h1>
-                    <nav>
-                        <ul>
-                            <li><a href="#">Omsale</a>
-                                <ul class="sub">
-                                    <li><a href="#">할인행사</a></li>
-                                    <li><a href="#">덤증정</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">기획전</a>
-                                <ul class="sub">
-                                    <li><a href="#">봄 먹거리</a></li>
-                                    <li><a href="#">여름 먹거리</a></li>
-                                    <li><a href="#">가을 먹거리</a></li>
-                                    <li><a href="#">겨울 먹거리</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">푸른마을 레시피</a>
-                                <ul class="sub">
-                                    <li><a href="#">메인요리</a></li>
-                                    <li><a href="#">밑반찬</a></li>
-                                    <li><a href="#">간식</a></li>
-                                    <li><a href="#">브런치</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">매장안내</a>
-                                <ul class="sub">
-                                    <li><a href="#">신규매장</a></li>
-                                    <li><a href="#">추천매장</a></li>
-                                    <li><a href="#">공지사항</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="spot"><span>회원가입&nbsp;|</span><span>&nbsp;로그인</span></div>
-                    <div class="menubg"></div>
-                </header>
-                <div class="con">
-                    <div class="go">
-                        <ul>
-                            <li><a href="#"><img src="./images/now01.png" alt="now01"><p>배송안내</p></a></li>
-                            <li><a href="#"><img src="./images/now02.png" alt="now02"><p>배송지역찾기</p></a></li>
-                            <li><a href="#"><img src="./images/now03.png" alt="now03"><p>최근본상품</p></a></li>
-                        </ul>
-                    </div>
-                    <div class="slide">
-                        <ul>
-                            <li class="s1"><a href="#">
-                                <div>
-                                    <h2>딸기백화점 그린마켓</h2>
-                                    <p>맛과 영양이 농축된 60일 딸기, 새콤달콤, 종류도 맛도 다양한 딸기 백화점</p>
-                                </div>
-                            </a></li>
-                            <li class="s2"><a href="#">
-                                <div>
-                                    <h2>레스토랑 전용, 2CM 스테이크</h2>
-                                    <p>맛보셨나요? 황홀한 두께가 만드는 황홀한 맛과 식감</p>
-                                </div>
-                            </a></li>
-                            <li class="s3"><a href="#">
-                                <div>
-                                    <h2>다양한 라면이 존재하는 그린마켓</h2>
-                                    <p>그린마켓에서 다양한 라면을 맛보세요. 저렴한 가격으로 모십니다.</p>
-                                </div>
-                            </a></li>
-                        </ul>
-                    </div>
-                    <div class="banner">
-                        <ul>
-                            <li><a href="#"><img src="./images/banner.png" alt="banner"></a></li>
-                            <li><a href="#">
-                                <h4>힘내세요! 소상공인</h4>
-                                <p>그린 마켓에서는 소상공인을 위한 카테고리를 오픈 했습니다.<br>
-                                    고객님들이 가치있는 따뜻한 소비를 소상공인 분들을위해 해주세요.<br> 
-                                    농산물, 수산물, 축산물, 반찬류, 일반식품, 간식/디저트, 건강식품 등 다양한 상품을 즐겨 보세요.   </p>
-                            </a></li>
-                            <li><a href="#"><img src="./images/bannerbtn.png" alt="bannerbtn"></a></li>
-                        </ul>
-                    </div>
-                    <div class="tabcon">
-                        <div class="btn">
-                            <button class="btn1">공지사항</button>
-                            <button class="btn2">갤러리</button>
-                        </div>
-                        <div class="content">
-                            <article class="table">
-                                <table>
-                                    <tr>
-                                        <th><a href="#" class="pp">그린마켓 접속 및 서비스 장애 안내  </a></th>
-                                        <td>2023.03.05</td>
-                                    </tr>
-                                    <tr>
-                                        <th><a href="#">2023 설 명절 연휴 배송 안내</a></th>
-                                        <td>2023.03.02</td>
-                                    </tr>
-                                    <tr>
-                                        <th><a href="#">그린마켓 쿠폰발송 동의안내</a></th>
-                                        <td>2023.02.11</td>
-                                    </tr>
-                                    <tr>
-                                        <th><a href="#">그린마켓 주간배송 권역 조정 안내</a></th>
-                                        <td>2023.01.15</td>
-                                    </tr>
-                                </table>
-                            </article>
-                            <article class="gall">
-                                <ul>
-                                    <li><a href="#"><img src="./images/gall01.png" alt="gall01"><p>닭고기 24시 특가</p></a></li>
-                                    <li><a href="#"><img src="./images/gall02.png" alt="gall01"><p>사과과수원배송 특가</p></a></li>
-                                    <li><a href="#"><img src="./images/gall03.png" alt="gall01"><p>원데이반찬 특가</p></a></li>
-                                </ul>
-                            </article>
-                        </div>
-                    </div>
+        <div class="top">
+            <header>
+                <a href="#"><img src="./images/logo.png" alt=""></a>
+                <nav>
+                    <ul>
+                        <li><a href="#">박물관 소개</a>
+                            <ul class="sub">
+                                <li><a href="#">인사말</a></li>
+                                <li><a href="#">박물관연혁</a></li>
+                                <li><a href="#">박물관 조직도</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">전시</a>
+                            <ul class="sub">
+                                <li><a href="#">전시 리스트</a></li>
+                                <li><a href="#">전시일정</a></li>
+                                <li><a href="#">특별전</a></li>
+                                <li><a href="#">지역작가</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">체험행사</a>
+                            <ul class="sub">
+                                <li><a href="#">문화행사</a></li>
+                                <li><a href="#">진로체험</a></li>
+                                <li><a href="#">명사특강</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">커뮤니티</a>
+                            <ul class="sub">
+                                <li><a href="#">사용자메뉴얼</a></li>
+                                <li><a href="#">박물관 약도</a></li>
+                                <li><a href="#">게시판</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="con">
+                <div class="banner">
+                    <ul>
+                        <li><a href="#"><img src="./images/banner.jpg" alt="banner"></a></li>
+                        <li><a href="#"></a>
+                            <h3>영상박물관TV</h3>
+                            <p>영상박물관을 
+                                유튜브에서 먼저
+                                즐겨보세요!</p>
+                        </li>
+                        <li><a href="#"><img src="./images/arrow.png" alt="arrow"></a></li>
+                    </ul>
+                </div>
+                <div class="notice">
+                    <h2>공지사항</h2><br>
+                    <table>
+                        <tr>
+                            <th><a href="#" class="pp">제 7회 세계사진영상기기 100년사 초대전개최   </a></th>
+                            <td><a href="#">2023.03.05</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="#">2023년 휴관일 안내</a></th>
+                            <td><a href="#">2023.03.02</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="#">세계전파, 방송기기 100년사 특별 초대전</a></th>
+                            <td><a href="#">2023.02.11</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="#">홈페이지를 오픈했습니다.</a></th>
+                            <td><a href="#">2023.01.15</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="gall">
+                    <h2>갤러리</h2><br>
+                    <ul>
+                        <li><a href="#"><img src="./images/gall1.jpg" alt="gall1"><p>영상의 역사안내</p></a></li>
+                        <li><a href="#"><img src="./images/gall2.jpg" alt="gall2"><p>클래스 영상학 배우기</p></a></li>
+                    </ul>
                 </div>
             </div>
-            <footer>
-                <div class="fleft">
-                    <p>서울사무소 : 서울특별시 종로구 종로0길 00 더그린마켓<br>
-                        상호:주식회사 더그린마켓 대표자:오쌔뮤 사업자등록번호:000-00-00000 통신판매업신고번호:제 2023-서울-0000</p>
-                        <p>Copyright &copy;TheGreenMarket Corp. All Rights Reserved.</p>
-                </div>
-                <div class="fright">
-                    <p><a href="#">개인정보처리방침&nbsp;저작권정책&nbsp;RSS</a></p>
-                </div>
-            </footer>
-            <div class="popup">
-                <h2>진하고 풍부한 과일맛 좋은 원료로 만든 비건 젤리</h2>
-            
-                <p> 아이들도 마음 놓고 즐길 수 있는<br>
-                    말랑말랑~ <br>
-                    부드럽게 씹히는 글루텐 FREE 젤리!<br>
-    
-                    유기농 원료로 만든 제품으로<br>
-                    아이와 함께 즐기기 좋아요. <br>
-    
-                    - 야미얼스 유기농 웜 젤리<br>
-                    - 야미얼스 유기농 베어 젤리<br>
-                    - 야미얼스 유기농 후르츠 스낵<br>
-    
-                    많은 관심 부탁드려요.</p> 
-                <button>X닫기</button>
+            <div class="slide">
+                <ul>
+                    <li class="s1">
+                        <a href="#">
+                            <div class="text">
+                                <h1>제 7회 세계사진영상기기 100년사 초대전</h1>
+                                <h3>한국뿐만 아닌 전세계 사진 역사를 볼 좋은 기회를 만들어 드립니다.</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="s2">
+                        <div class="text">
+                            <h1>한국 영상의 흐름을 보여주는 영상박물관</h1>
+                            <h3>대한민국 최초로 생긴 한국영상박물관에 많은 관심 부탁드립니다.</h3>
+                        </div>
+                    </li>
+                    <li class="s3">
+                        <div class="text">
+                            <h1>4차혁명을 주도하는 초근접 촬영기술</h1>
+                            <h3>가까이에 있는 미생물까지 찍을 수 있는 카메라를 소개합니다.</h3>
+                        </div>
+                    </li>
+                </ul>
             </div>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="#"><img src="./images/flogo.png" alt="flogo"></a></li>
+                <li>000000 서울특별시 종로구 세종대로 000 | 대표전화 02-0000-0000 | 팩스 02-0000-0000<br>
+                    Copyright © Movie Museum of Korean Contemporary History. All Right reserved</li>
+                <li><a href="#">
+                    <ul>
+                        <li><img src="./images/sns1.png" alt="sns1"></li>
+                        <li><img src="./images/sns2.png" alt="sns2"></li>
+                        <li><img src="./images/sns3.png" alt="sns3"></li>
+                    </ul>
+                </a></li>
+            </ul>
+        </footer>
+        <div class="popup">
+            <h2>제12회 대한민국
+                국제비디오대전 시상식</h2>
+            <p>대한민국 국제 비디오대전시상식을 진행
+                합니다.<br>
+                여러분들의 많은 관심 부탁드립니다.<br> <br>  
+    
+                - 일정 : 2023년 3월 7일(수) 오후 2시<br>
+                - 장소 : 한국영상박물관 3층 다목적홀<br>
+                - 관람신청 : 공연 1주일 전 홈페이지신청<br>
+                - 시상<br><br>
+                    1. 대상 : XXX<br>
+                    2. 최우수상 : XXX<br>
+                    3. 우수상 : XXX<br>
+                    4. 장려상 : XXX</p>
+            <button>X닫기</button>
+        </div>
     </div>
-        
 </body>
 </html>
