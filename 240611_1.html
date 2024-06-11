@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline Animation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <style>
+        #circle {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            border-radius: 50%;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="circle"></div>
+
+    <script>
+        const tl = gsap.timeline();
+        tl.to("#circle", {duration: 1, x: 300})
+          .to("#circle", {duration: 1, y: 200})
+          .to("#circle", {duration: 1, backgroundColor: "yellow"});
+    </script>
+</body>
+</html>

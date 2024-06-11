@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScrollTrigger Full Screen Sections</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .section {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            color: white;
+        }
+        #section1 { background-color: #1abc9c; }
+        #section2 { background-color: #3498db; }
+        #section3 { background-color: #9b59b6; }
+        #section4 { background-color: #e74c3c; }
+        .animate-box {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="section1" class="section">
+        <div class="animate-box"></div>
+    </div>
+    <div id="section2" class="section">
+        <div class="animate-box"></div>
+    </div>
+    <div id="section3" class="section">
+        <div class="animate-box"></div>
+    </div>
+    <div id="section4" class="section">
+        <div class="animate-box"></div>
+    </div>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        const sections = gsap.utils.toArray(".section");
+        sections.forEach((section, index) => {
+            const box = section.querySelector(".animate-box");
+            gsap.from(box, {
+                scrollTrigger: {
+                    trigger: section,
+                    start: "top center",
+                    end: "top 100px",
+                    scrub: true
+                },
+                x: -300,
+                rotation: 360,
+                duration: 2
+            });
+        });
+    </script>
+</body>
+</html>

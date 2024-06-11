@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!--
+    gsap 기본 메서드
+    gsap.to() : 움직임의 끝지점을 설정하는 메서드입니다.
+    gsap.from() : 움직임의 시작지점을 설정하는 메서드입니다.
+    gsap.fromTo() : 움직임의 시작지점부터~ 끝지점을 설정하는 메서드입니다.
+    gsap.set() : 요소에 미리 속성값을 설정하는 메서드입니다.
+    gsap.timeline() : 연속적인 애니메이션을 설정하는 메서드입니다.
+    -->
+    <style>
+        .box{ margin: 15px; }
+        .box1{ width: 100px; height: 100px; background: orange; }
+        .box2{ width: 200px; height: 100px; background: greenyellow; }
+        .box3{ width: 100px; height: 200px; background : tomato; }      
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+
+    <script>
+        gsap.to(".box",{x:300});
+        gsap.to(".box1",{duration:3, x:200, opacity:0.2, ease: 'steps(10)', delay:2});
+        gsap.to(".box2",{duration:3, x:200, backgroundColor:'salmon', opacity:0.2, ease: 'steps(10)', delay:2});
+        gsap.to(".box3",{duration:3, x:200, opacity:0.2, ease: 'steps(10)', delay:2});
+    </script>
+</body>
+</html>
