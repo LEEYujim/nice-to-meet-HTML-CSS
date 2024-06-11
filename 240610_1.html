@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>풀페이지 연습</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.css">
+
+    <style>
+        .section{
+            text-align: center;
+            font-size: 2em;
+            color: blanchedalmond;
+        }
+        #sec1{background-color: darkcyan;}
+        #sec2{background-color: darkslateblue;}
+        #sec3{background-color: darkslategrey;}
+        #sec4{background-color: darkblue;}
+
+        li{list-style-type: none;}
+        a{text-decoration: none; color: inherit;}
+        body{color: #333; background-color: #fff;}
+        .navbar{
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            text-align: center;
+            padding: 10px;
+            background-color: blanchedalmond;
+            width: 100%;
+            font-weight: bold;
+        }
+        .navbar a:hover{color: darkblue;}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#first">첫번째</a>
+        <a href="#second">두번째</a>
+        <a href="#third">세번째</a>
+        <a href="#fourth">네번째</a>
+    </div>
+    <div id="fullpage">
+        <div class="section" id="sec1">Some section</div>
+        <div class="section" id="sec2">Some section</div>
+        <div class="section" id="sec3">Some section</div>
+        <div class="section" id="sec4">Some section</div>
+    </div>
+
+    <script>
+        new fullpage('#fullpage', {
+	     //options here
+            autoScrolling:true,
+            navigation: true,
+            navigationPosition: 'right',
+            anchors: ['first', 'second', 'third', 'fourth'],
+            // navigationTooltips: ['first', 'second', 'third', 'fourth'],
+            showActiveTooltip: true
+        });
+    </script>
+</body>
+</html>
+
+
+<!--
+1. 기본 풀페이지 세팅
+2. 모든 요소를 갖다놓은 것
+3. 백그라운드 색상 추가하여 스크롤
+4. 각 섹션별 내비게이션
+-->
